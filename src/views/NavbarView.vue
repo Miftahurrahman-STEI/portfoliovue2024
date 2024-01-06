@@ -36,7 +36,7 @@
     }
     .header nav a{
         color: black;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Pixelify Sans', sans-serif;
         font-size: 12px;
         font-weight: 400;
         padding: 20px;

@@ -3,13 +3,15 @@
         <div class="hero-main">
             <div class="intro">
                     <h2>Hello,<br/>Introducing my name<br/>Muhammad Miftahurrahman</h2>
-                    <p>Student <span>| Cyber Security ✨</span></p>
+                    <p>Student <span>| Front End Web Developer ✨</span></p>
                 <div class="skills">
-                    <img src="../components/img/typescript.png" alt="skill">
-                    <img src="../components/img/figma.png" alt="skill">
-                    <img src="../components/img/c-.png" alt="skill">
-                    <img src="../components/img/js.png" alt="skill">
-                    <img src="../components/img/github.png" alt="skill">
+                    <img src="../components/img/icons8-vue-js-48.png" alt="skill">
+                    <img src="../components/img/icons8-react-native-48.png" alt="skill">
+                    <img src="../components/img/icons8-laravel-48.png" alt="skill">
+                    <img src="../components/img/icons8-c-48.png" alt="skill">
+                    <img src="../components/img/icons8-tailwindcss-48.png" alt="skill">
+                    <img src="../components/img/icons8-figma-48.png" alt="skill">
+                    <img src="../components/img/icons8-nodejs-48.png" alt="skill">
                 </div>
             </div>
             <div class="profile">
@@ -94,26 +96,139 @@
 </template>
 
 <style scoped>
-        .hero {
+        .hero{
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
+            color: #000;
+            margin-top: 4rem;
         }
         .hero .hero-main{
             width: 100%;
             height: 100%;
+            background-color: #3887BE;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
-            flex-direction: row;
+        }
+        .hero .hero-main .intro{
+            padding: 2rem;
+            text-align: justify;
+        }
+        .hero .hero-main .intro h2{
+            font-weight: bold;
+            color: #F0E5CF;
+        }
+        .hero .intro p{
+            font-size: 15px;
+            color: #F0E5CF;
+            letter-spacing: 1px;
+        }
+        .hero .intro p > span{
+            color: #f0e5cfc7;
         }
         .hero .profile img{
             width: 350px;
             height: 250px;
             object-fit: cover;
             border-radius: 10px;
+        }
+        .hero .hero-main .skills{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 5px;
+            margin-top: 1rem;
+        }
+        .hero .about-me{
+            width: 100%;
+            padding: 1.5rem;
+            color: #000;
+        }
+        .hero .about-me .text p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero .achivment{
+            background-color: #3887BE;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+        }
+        .hero .achivment h1{
+            margin-bottom: 1.5rem;
+        }
+        .hero .achivment .text p{
+            font-family: 'Nunito', sans-serif;
+            color: gainsboro;
+        }
+        .hero .achivment .carousel,
+        .hero .projects .carousel{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+        .hero .achivment .carousel .card,
+        .hero .projects .carousel .card{
+            padding: 10px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .hero .projects .carousel .card{
+            background-color: #EBE3D5;
+        }
+        .hero .achivment .carousel .card p{
+            color: #000;
+        }
+        .hero .projects .carousel .card p{
+            color: #000;
+        }
+        .hero .achivment .carousel .card img,
+        .hero .projects .carousel .card img{
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .hero .projects .carousel .card img{
+            object-fit: contain;
+        }
+        .hero .contact {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .hero .contact form{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 300px;
+            height: 200px;
+            gap: 10px;
+        }
+        .hero .contact form input:nth-child(1){
+            padding: 10px 20px;
+        }
+        .hero .contact form > textarea{
+            resize: none;
+        }
+        .hero .contact form button{
+            padding: 10px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 15px;
+            background-color: #3887BE;
         }
 
 @media only screen and (max-width: 728px){
@@ -124,6 +239,7 @@
             flex-direction: column;
             color: #000;
             margin-top: 4rem;
+            padding: 0;
         }
         .hero .hero-main{
             width: 100%;
@@ -158,12 +274,13 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            gap: 12px;
+            flex-wrap: wrap;
+            gap: 7px;
             margin-top: 1rem;
         }
         .hero .hero-main .skills img{
-            width: 25px;
-            height: 25px;
+            width: 30px;
+            height: 30px;
         }
         .hero .about-me{
             width: 100%;
@@ -227,13 +344,16 @@
             width: 100%;
             height: 100%;
         }
+        .hero .contact .text h1{
+            letter-spacing: 1px;
+        }
         .hero .contact form{
             display: flex;
             flex-direction: column;
             margin: 0 auto;
             width: 300px;
             height: 200px;
-            gap: 10px;
+            gap: 12px;
         }
         .hero .contact form input:nth-child(1){
             padding: 10px 20px;

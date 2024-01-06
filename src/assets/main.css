@@ -7,9 +7,11 @@
   font-family: 'Pixelify Sans', sans-serif;
 }
 
+body{
+  background-color: #fff;
+}
+
 #app {
-  max-width: 1280px;
-  font-weight: normal;
   text-align: center;
 }
 
