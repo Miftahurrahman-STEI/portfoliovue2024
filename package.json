@@ -9,14 +9,25 @@
     "test:unit": "vitest"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
     "@tabler/icons-vue": "^2.45.0",
+    "axios": "^1.6.8",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "querystring": "^0.2.1",
     "vue": "^3.3.4",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "vue-sweetalert2": "^5.0.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.0",
     "@vue/test-utils": "^2.4.1",
     "jsdom": "^22.1.0",
+    "nodemon": "^3.1.0",
     "vite": "^4.4.11",
     "vitest": "^0.34.6",
     "vue-concise-slider": "^4.2.5"

@@ -1,27 +1,27 @@
-    <template>
-    <div class="header">
-        <div class="banner">
-            <img src="../components/img/tkj.png" alt="logo" id="home">
+<template>
+        <div class="header" onscroll="handleScroll">
+            <div class="banner">
+                <img src="../components/img/brand.png" alt="logo" id="home">
+            </div>
+            <nav>
+                <RouterLink to="{{ name: 'home' }}">Home</RouterLink >
+                <RouterLink to="/about">About me</RouterLink >
+                <RouterLink to="/achivment">Achivment</RouterLink >
+                <RouterLink to="/portfolio">Portfolio</RouterLink >
+                <RouterLink to="/contact">Contact us</RouterLink>
+            </nav>
         </div>
-        <nav>
-            <RouterLink to="/">Home</RouterLink >
-            <RouterLink to="/about">About me</RouterLink >
-            <RouterLink to="/achivment">Achivment</RouterLink >
-            <RouterLink to="/portfolio">Portfolio</RouterLink >
-            <RouterLink to="/contact">Contact us</RouterLink>
-        </nav>
-    </div>
-    </template>
+</template>
 
 <style scoped>
     .header{
         width: 100%;
-        height: 66px;
+        height: 70px;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         background-color: #ffffff;
-        border-bottom: 2px solid #3887BE;
+        border-bottom: 2px solid #3586ff;
         position: fixed;
         top: 0;
         z-index: 99999;
@@ -37,8 +37,8 @@
     .header nav a{
         color: black;
         font-family: 'Pixelify Sans', sans-serif;
-        font-size: 12px;
-        font-weight: 400;
+        font-size: 14px;
+        font-weight: 500;
         padding: 20px;
         text-decoration: none;
     }
@@ -52,9 +52,9 @@
         gap: 1.5rem;
     }
         .header .banner img{
-        width: 55px;
-        height: 55px;
-        object-fit: cover;
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
     }
 
 @media only screen and (max-width: 728px){
@@ -100,9 +100,9 @@
         gap: 1.5rem;
     }
     .header .banner img{
-        width: 55px;
-        height: 55px;
-        object-fit: cover;
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
     }
 }
 </style>
