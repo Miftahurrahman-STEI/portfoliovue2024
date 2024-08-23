@@ -22,7 +22,7 @@ Fitur :
   📍 Message Email dibagian dekat footer
 
 
-# vue-project-to-expert
+# Portfolio Vue JS
 
 This template should help get you started developing with Vue 3 in Vite.
 
