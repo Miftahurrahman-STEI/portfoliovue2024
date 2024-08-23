@@ -11,13 +11,6 @@
             <li><a href="https://www.linkedin.com/in/muhammad-miftahurrahman-708633259/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
             <li><a href="https://www.instagram.com/mippvue/"><ion-icon name="logo-instagram"></ion-icon></a></li>
         </ul>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
         <p>@2024 Miftahurrahman | All Rights Reserved</p>
     </footer>
 </template>
@@ -32,19 +25,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 4em;
+            margin-top: 7rem;
             flex-direction: column;
+            justify-content: flex-end;
+            z-index: -1;
         }
-        footer .social_icon,
-        footer .menu{
+        footer .social_icon{
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 10px 0;
         }
-        footer .social_icon li,
-        footer .menu li{
+        footer .social_icon li{
             list-style: none;
         }
         footer .social_icon li a{

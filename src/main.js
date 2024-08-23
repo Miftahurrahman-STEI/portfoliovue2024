@@ -1,45 +1,39 @@
-import './assets/main.css'
+import './assets/main.css';
+import App from './App.vue';
 
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
 
-import {createRouter, createWebHistory} from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
+import HomeView from './views/HomeView.vue';
 
-import Home from './views/HeroesView.vue'
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHistory(),
     routes: [
         {
-        path: '/',
-        name: 'home',
-        component: Home
+            path: '/',
+            name: "Home",
+            component: HomeView
         },
         {
-        path: '/about',
-        name: 'about',
-        component: Home
+            path: '/about',
+            name: "About",
+            component: () => import('./views/AboutView.vue')
         },
         {
-        path: '/achiv',
-        name: 'achivment',
-        component: Home
+            path: '/contact',
+            name: "Contact",
+            component: () => import('./views/ContactView.vue')
         },
         {
-        path: '/porto',
-        name: 'portfolio',
-        component: Home
-        },
-        {
-        path: '/contact',
-        name: 'contact',
-        component: Home
-        },
+            path: '/achivment',
+            name: "Achivment",
+            component: () => import('./views/AchivmentView.vue')
+        }
+
     ]
 })
 
 const app = createApp(App)
-
 app.use(router)
-
 app.mount('#app')

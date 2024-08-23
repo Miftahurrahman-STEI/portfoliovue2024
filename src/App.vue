@@ -1,15 +1,20 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router';
-import NavbarView from './views/NavbarView.vue';
-import Hero from './views/HeroesView.vue';
-import Footer from './views/FooterView.vue';
-</script>
-
 <template>
-  <div>
-    <NavbarView/>
-    <Hero/>
-    <Footer/>
+  <div class="app">
+      <Navigation/>
+      <router-view/>
+      <Footer />
   </div>
 </template>
 
+<script>
+  import Navigation from './components/NavbarView.vue'
+  import Footer from './components/FooterView.vue'
+
+  export default{
+    name: "App",
+    components: {
+      Navigation,
+      Footer,
+    }
+  }
+</script>
