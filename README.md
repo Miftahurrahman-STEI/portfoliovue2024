@@ -4,7 +4,7 @@ Halo semuanya perkenalkan saya Muhammad Miftahurrahman, saya merupakan Mahasiswa
 Saya membuat website ini terinspirasi oleh Pak Sandhika Galih, saya coba rombak dan menambahkan beberapa fitur mulai dari Framework yang digunakan 
 sampai posisi tata letak.
 Di Website yang telah saya buat, saya menampilkan Tentang diri saya, Pelatihan dan Perlombaan yang telah saya raih selama saya duduk di bangku
-SMK dengan jurusan Teknik Komputer dan Jaringan ( TKJ ).
+SMK dengan jurusan Teknik Komputer dan Jaringan ( TKJ ), dan Project yang telah saya buat mau itu Individu ataupun Collaboration dengan Alumni.
 Saya pertama kali mengikuti Showcase ini jika ada kekurangan mohon berikan saya Kritik dan Saran agar saya dapat terus berinovasi .
 Terima Kasih 🙏.
 
