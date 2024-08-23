@@ -6,7 +6,9 @@ sampai posisi tata letak.
 Di Website yang telah saya buat, saya menampilkan Tentang diri saya, Pelatihan dan Perlombaan yang telah saya raih selama saya duduk di bangku
 SMK dengan jurusan Teknik Komputer dan Jaringan ( TKJ ), dan Project yang telah saya buat mau itu Individu ataupun Collaboration dengan Alumni.
 Saya pertama kali mengikuti Showcase ini jika ada kekurangan mohon berikan saya Kritik dan Saran agar saya dapat terus berinovasi .
-Terima Kasih 🙏.
+Jangan lupa untuk berikan Stars yaa, Salam Titik Koma !! , Terima Kasih 🙏.
+
+
 
 Tech Stack :
   🌟 Framework Vue JS 3
