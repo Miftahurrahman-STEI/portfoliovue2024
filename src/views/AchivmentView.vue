@@ -65,15 +65,26 @@
         }
          .achivment .carousel .card,
          .projects .carousel .card{
-            padding: 10px;
-            background-color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            box-shadow: 2px 6px 10px -2px gray;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
             z-index: 1;
+            background-color: #fff;
+        }
+        .achivment .carousel .card .card-title,
+        .projects .carousel .card .card-title{
+            width: 100%;
+            font-size: 15px;
+            padding: 20px;
+            font-weight: 400;
+        }
+        .achivment .carousel .card .card-desc,
+        .projects .carousel .card .card-desc{
+            padding: 10px;
+            font-weight: 500;
         }
          .achivment .carousel .card:hover,
          .projects .carousel .card:hover{
@@ -89,6 +100,5 @@
             width: 300px;
             height: 200px;
             object-fit: cover;
-            border-radius: 10px;
         }
 </style>

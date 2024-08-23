@@ -15,6 +15,6 @@
     components: {
       Navigation,
       Footer,
-    }
+    },
   }
 </script>
