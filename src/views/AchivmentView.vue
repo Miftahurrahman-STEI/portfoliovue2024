@@ -23,16 +23,16 @@
         data() {
             return {
                 cards: [
-                    { id: 1, imageUrl: '/src/assets/achivment/achiv.jpeg',title: 'Card 1', description: 'Deskripsi card 1' },
-                    { id: 2, imageUrl: '/src/assets/achivment/achiv2.jpg',title: 'Card 2', description: 'Deskripsi card 2' },
-                    { id: 3, imageUrl: '/src/assets/achivment/achiv4.jpg',title: 'Card 3', description: 'Deskripsi card 3' },
-                    { id: 4, imageUrl: '/src/assets/achivment/achiv5.jpg',title: 'Card 4', description: 'Deskripsi card 4' },
-                    { id: 5, imageUrl: '/src/assets/achivment/achiv3.jpg',title: 'Card 5', description: 'Deskripsi card 5' },
-                    { id: 6, imageUrl: '/src/assets/achivment/achiv6.jpg',title: 'Card 6', description: 'Deskripsi card 6' },
-                    { id: 7, imageUrl: '/src/assets/achivment/achiv7.jpg',title: 'Card 7', description: 'Deskripsi card 7' },
-                    { id: 8, imageUrl: '/src/assets/achivment/achiv8.jpg',title: 'Card 8', description: 'Deskripsi card 8' },
-                    { id: 9, imageUrl: '/src/assets/achivment/achiv9.jpg',title: 'Card 9', description: 'Deskripsi card 8' },
-                    { id: 10, imageUrl: '/src/assets/achivment/achiv10.jpg',title: 'Card 10', description: 'Deskripsi card 8' },
+                    { id: 1, imageUrl: './src/assets/achivment/achiv.jpeg',title: 'Card 1', description: 'Deskripsi card 1' },
+                    { id: 2, imageUrl: './src/assets/achivment/achiv2.jpg',title: 'Card 2', description: 'Deskripsi card 2' },
+                    { id: 3, imageUrl: './src/assets/achivment/achiv4.jpg',title: 'Card 3', description: 'Deskripsi card 3' },
+                    { id: 4, imageUrl: './src/assets/achivment/achiv5.jpg',title: 'Card 4', description: 'Deskripsi card 4' },
+                    { id: 5, imageUrl: './src/assets/achivment/achiv3.jpg',title: 'Card 5', description: 'Deskripsi card 5' },
+                    { id: 6, imageUrl: './src/assets/achivment/achiv6.jpg',title: 'Card 6', description: 'Deskripsi card 6' },
+                    { id: 7, imageUrl: './src/assets/achivment/achiv7.jpg',title: 'Card 7', description: 'Deskripsi card 7' },
+                    { id: 8, imageUrl: './src/assets/achivment/achiv8.jpg',title: 'Card 8', description: 'Deskripsi card 8' },
+                    { id: 9, imageUrl: './src/assets/achivment/achiv9.jpg',title: 'Card 9', description: 'Deskripsi card 8' },
+                    { id: 10, imageUrl: './src/assets/achivment/achiv10.jpg',title: 'Card 10', description: 'Deskripsi card 8' },
                 ],
             }
         }
