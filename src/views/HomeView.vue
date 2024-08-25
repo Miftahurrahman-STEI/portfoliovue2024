@@ -99,27 +99,27 @@
         data() {
             return {
                 cards: [
-                    { id: 1, imageUrl: './src/components/img/achivment/achiv.jpeg',title: 'Juara 1 Algoritma Kompetisi Pemrograman C/C++', description: 'Universitas Budi Luhur' },
-                    { id: 2, imageUrl: './src/components/img/achivment/achiv2.jpg',title: 'Peserta Lomba CSS E-Sports Battle WPU EVENT OF THE YEAR', description: 'Universitas Pasundan Bandung' },
-                    { id: 3, imageUrl: './src/components/img/achivment/achiv3.jpg',title: 'AWS Cloud Competition For Sagasitas Tech 2024', description: 'AWS Sagasitas For Tech 2024' },
-                    { id: 4, imageUrl: './src/components/img/achivment/achiv4.jpg',title: 'Praktik Kerja Lapangan Komisi Pemilihan Umum Kota Jakarta Barat', description: 'Komisi Pemilihan Umum'},
-                    { id: 5, imageUrl: './src/components/img/achivment/achiv5.jpg',title: 'Memulai Dasar Pemrograman untuk Menjadi Pengembang Software', description: 'Dicoding Indonesia' },
-                    { id: 6, imageUrl: './src/components/img/achivment/achiv6.jpg',title: 'Belajar Dasar Structured Query Language ( SQL )' , description: 'Dicoding Indonesia'},
-                    { id: 7, imageUrl: './src/components/img/achivment/achiv7.jpg',title: 'Belajar Dasar AI (Artificial Intelligence)', description: 'Dicoding Indonesia' },
-                    { id: 8, imageUrl: './src/components/img/achivment/achiv8.jpg',title: 'Memulai Pemrograman dengan Python', description: 'Dicoding Indonesia' },
-                    { id: 9, imageUrl: './src/components/img/achivment/achiv9.jpg',title: 'Memulai Pemrograman dengan C', description: 'Dicoding Indonesia'},
-                    { id: 10, imageUrl:'./src/components/img/achivment/achiv10.jpg',title: 'Dicoding Developer Coaching #103', description: 'Dicoding Indonesia'},
-                    { id: 11, imageUrl:'./src/components/img/achivment/achiv11.jpg',title: 'Javascript 10 Projects for Beginner', description: 'Udemy Course'},
+                    { id: 1, imageUrl: '../src/components/img/achivment/achiv.jpeg',title: 'Juara 1 Algoritma Kompetisi Pemrograman C/C++', description: 'Universitas Budi Luhur' },
+                    { id: 2, imageUrl: '../src/components/img/achivment/achiv2.jpg',title: 'Peserta Lomba CSS E-Sports Battle WPU EVENT OF THE YEAR', description: 'Universitas Pasundan Bandung' },
+                    { id: 3, imageUrl: '../src/components/img/achivment/achiv3.jpg',title: 'AWS Cloud Competition For Sagasitas Tech 2024', description: 'AWS Sagasitas For Tech 2024' },
+                    { id: 4, imageUrl: '../src/components/img/achivment/achiv4.jpg',title: 'Praktik Kerja Lapangan Komisi Pemilihan Umum Kota Jakarta Barat', description: 'Komisi Pemilihan Umum'},
+                    { id: 5, imageUrl: '../src/components/img/achivment/achiv5.jpg',title: 'Memulai Dasar Pemrograman untuk Menjadi Pengembang Software', description: 'Dicoding Indonesia' },
+                    { id: 6, imageUrl: '../src/components/img/achivment/achiv6.jpg',title: 'Belajar Dasar Structured Query Language ( SQL )' , description: 'Dicoding Indonesia'},
+                    { id: 7, imageUrl: '../src/components/img/achivment/achiv7.jpg',title: 'Belajar Dasar AI (Artificial Intelligence)', description: 'Dicoding Indonesia' },
+                    { id: 8, imageUrl: '../src/components/img/achivment/achiv8.jpg',title: 'Memulai Pemrograman dengan Python', description: 'Dicoding Indonesia' },
+                    { id: 9, imageUrl: '../src/components/img/achivment/achiv9.jpg',title: 'Memulai Pemrograman dengan C', description: 'Dicoding Indonesia'},
+                    { id: 10, imageUrl:'../src/components/img/achivment/achiv10.jpg',title: 'Dicoding Developer Coaching #103', description: 'Dicoding Indonesia'},
+                    { id: 11, imageUrl:'../src/components/img/achivment/achiv11.jpg',title: 'Javascript 10 Projects for Beginner', description: 'Udemy Course'},
                 ],
                 cardsProject: [
                     {
-                        id: 1, imageUrl: 'https://cdn.dribbble.com/userupload/13287466/file/original-37cac061a902e46f613274d1c66aa66c.jpg?resize=1200x600', title: 'Ujian Online CBT Learning', description: 'Laravel 11, DBeaver, Spatie, MySQL, TailwindCSS',
+                        id: 1, imageUrl: '../src/components/img/project1.png', description: 'Laravel 11, DBeaver, Spatie, MySQL, TailwindCSS',
                     },
                     {
-                        id: 2, imageUrl: 'https://cdn.dribbble.com/userupload/9774668/file/original-17872dfe619a5ddc812b614df4653b6c.png?resize=1200x900', title: 'Website Property Villa', description: 'Vue JS 3 & TypeScript',
+                        id: 2, imageUrl: '../src/components/img/project3.png', title: 'Website Property Villa', description: 'Vue JS 3 & TypeScript',
                     },
                     {
-                        id: 3, imageUrl: 'https://cdn.dribbble.com/userupload/13294171/file/original-15a575519b3e219911ca1fb3cc98c331.png?resize=1200x900', title: 'Card Project 1',
+                        id: 3, imageUrl: '../src/components/img/project2.png', title: 'Card Project 1',
                     },
                     {
                         id: 4, imageUrl: 'https://cdn.dribbble.com/users/7677055/screenshots/17943042/media/d6581004b0dab170bce063b915c3930a.png?resize=1000x750&vertical=center', title: 'Card Project 1',
