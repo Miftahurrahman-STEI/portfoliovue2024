@@ -99,17 +99,17 @@
         data() {
             return {
                 cards: [
-                    { id: 1, imageUrl: '/src/assets/achivment/achiv.jpeg',title: 'Juara 1 Algoritma Kompetisi Pemrograman C/C++', description: 'Universitas Budi Luhur' },
-                    { id: 2, imageUrl: '/src/assets/achivment/achiv2.jpg',title: 'Peserta Lomba CSS E-Sports Battle WPU EVENT OF THE YEAR', description: 'Universitas Pasundan Bandung' },
-                    { id: 3, imageUrl: '/src/assets/achivment/achiv4.jpg',title: 'AWS Cloud Competition For Sagasitas Tech 2024', description: 'AWS Sagasitas For Tech 2024' },
-                    { id: 4, imageUrl: '/src/assets/achivment/achiv5.jpg',title: 'Praktik Kerja Lapangan Komisi Pemilihan Umum Kota Jakarta Barat', description: 'Komisi Pemilihan Umum'},
-                    { id: 5, imageUrl: '/src/assets/achivment/achiv3.jpg',title: 'Memulai Dasar Pemrograman untuk Menjadi Pengembang Software', description: 'Dicoding Indonesia' },
-                    { id: 6, imageUrl: '/src/assets/achivment/achiv9.jpg',title: 'Belajar Dasar Structured Query Language ( SQL )' , description: 'Dicoding Indonesia'},
-                    { id: 7, imageUrl: '/src/assets/achivment/achiv7.jpg',title: 'Belajar Dasar AI (Artificial Intelligence)', description: 'Dicoding Indonesia' },
-                    { id: 8, imageUrl: '/src/assets/achivment/achiv8.jpg',title: 'Memulai Pemrograman dengan Python', description: 'Dicoding Indonesia' },
-                    { id: 9, imageUrl: '/src/assets/achivment/achiv11.jpg',title: 'Memulai Pemrograman dengan C', description: 'Dicoding Indonesia'},
-                    { id: 10, imageUrl: '/src/assets/achivment/achiv6.jpg',title: 'Dicoding Developer Coaching #103', description: 'Dicoding Indonesia'},
-                    { id: 11, imageUrl: '/src/assets/achivment/achiv10.jpg',title: 'Javascript 10 Projects for Beginner', description: 'Udemy Course'},
+                    { id: 1, imageUrl: '/src/components/img/achivment/achiv.jpeg',title: 'Juara 1 Algoritma Kompetisi Pemrograman C/C++', description: 'Universitas Budi Luhur' },
+                    { id: 2, imageUrl: '/src/components/img/achivment/achiv2.jpg',title: 'Peserta Lomba CSS E-Sports Battle WPU EVENT OF THE YEAR', description: 'Universitas Pasundan Bandung' },
+                    { id: 3, imageUrl: '',title: 'AWS Cloud Competition For Sagasitas Tech 2024', description: 'AWS Sagasitas For Tech 2024' },
+                    { id: 4, imageUrl: '',title: 'Praktik Kerja Lapangan Komisi Pemilihan Umum Kota Jakarta Barat', description: 'Komisi Pemilihan Umum'},
+                    { id: 5, imageUrl: '',title: 'Memulai Dasar Pemrograman untuk Menjadi Pengembang Software', description: 'Dicoding Indonesia' },
+                    { id: 6, imageUrl: '',title: 'Belajar Dasar Structured Query Language ( SQL )' , description: 'Dicoding Indonesia'},
+                    { id: 7, imageUrl: '',title: 'Belajar Dasar AI (Artificial Intelligence)', description: 'Dicoding Indonesia' },
+                    { id: 8, imageUrl: '',title: 'Memulai Pemrograman dengan Python', description: 'Dicoding Indonesia' },
+                    { id: 9, imageUrl: '',title: 'Memulai Pemrograman dengan C', description: 'Dicoding Indonesia'},
+                    { id: 10, imageUrl:'',title: 'Dicoding Developer Coaching #103', description: 'Dicoding Indonesia'},
+                    { id: 11, imageUrl:'',title: 'Javascript 10 Projects for Beginner', description: 'Udemy Course'},
                 ],
                 cardsProject: [
                     {
