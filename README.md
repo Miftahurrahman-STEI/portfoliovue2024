@@ -1,4 +1,28 @@
-# vue-project-to-expert
+# Introducing 👋👋 
+
+Halo semuanya perkenalkan saya Muhammad Miftahurrahman, saya merupakan Mahasiswa Teknik Informatika di Universitas Mercu Buana Jakarta.
+Saya membuat website ini terinspirasi oleh Pak Sandhika Galih, saya coba rombak dan menambahkan beberapa fitur mulai dari Framework yang digunakan 
+sampai posisi tata letak.
+Di Website yang telah saya buat, saya menampilkan Tentang diri saya, Pelatihan dan Perlombaan yang telah saya raih selama saya duduk di bangku
+SMK dengan jurusan Teknik Komputer dan Jaringan ( TKJ ), dan Project yang telah saya buat mau itu Individu ataupun Collaboration dengan Alumni.
+Saya pertama kali mengikuti Showcase ini jika ada kekurangan mohon berikan saya Kritik dan Saran agar saya dapat terus berinovasi .
+Jangan lupa untuk berikan Stars yaa, Salam Titik Koma !! , Terima Kasih 🙏.
+
+
+
+Tech Stack :
+  🌟 Framework Vue JS 3
+  🌟 Vanilla CSS
+
+Fitur :
+  📍 Navigation yang interaktif dan smooth untuk mobile & desktop
+  📍 Card Animation
+  📍 Button Hire Me
+  📍 Footer Animation
+  📍 Message Email dibagian dekat footer
+
+
+# Portfolio Vue JS
 
 This template should help get you started developing with Vue 3 in Vite.
 
