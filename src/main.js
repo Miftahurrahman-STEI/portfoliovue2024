@@ -2,6 +2,7 @@ import './assets/main.css';
 import App from './App.vue';
 
 import { createApp } from 'vue';
+import { MotionPlugin } from '@vueuse/motion'
 
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from './views/HomeView.vue';
@@ -36,4 +37,5 @@ const router = createRouter({
 
 const app = createApp(App)
 app.use(router)
+app.use(MotionPlugin)
 app.mount('#app')

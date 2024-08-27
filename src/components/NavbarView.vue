@@ -81,7 +81,7 @@ header{
     position: fixed;
     transition: .5s ease all;
     color: #fff;
-    nav{
+    :is(nav){
         display: flex;
         flex-direction: row;
         padding: 12px 0;
@@ -92,7 +92,7 @@ header{
             max-width: 1140px;
         }
     
-        ul,
+        :is(ul),
         .link {
             font-weight: 500;
             color: #fff;
@@ -100,7 +100,7 @@ header{
             text-decoration: none
         }
     
-        li {
+        :is(li) {
             text-transform: uppercase;
             padding: 16px;
             margin-left: 16px;
@@ -122,7 +122,7 @@ header{
             display: flex;
             align-items: center;
     
-            img {
+            :is(img) {
                 width: 50px;
                 transition: .5s ease all;
             }
@@ -144,7 +144,7 @@ header{
             right: 24px;
             height: 100%;
     
-            i {
+            :is(i) {
                 cursor: pointer;
                 font-size: 24px;
                 transition: .8s ease all;
@@ -166,7 +166,7 @@ header{
             top: 0;
             left: 0;
 
-            li {
+            :is(li) {
                 margin-left: 0;
                 .link{
                     color: #000;
@@ -194,11 +194,11 @@ header{
     background-color: #000;
     box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
 
-    nav {
+    :is(nav) {
         padding: 8px 0;
 
         .branding {
-            img {
+            :is(img) {
                 width: 40px;
                 box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
             }

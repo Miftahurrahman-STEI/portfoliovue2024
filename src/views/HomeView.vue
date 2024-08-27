@@ -2,34 +2,45 @@
     <div class="hero">
         <div class="hero-main">
             <div class="intro">
-                    <h1>Hy! I Am,<br/>Muhammad Miftahurrahman</h1>
-                    <p class="desc-profile">{{ majors }}<span> | {{ jobTitle }}</span></p>
+                    <h1>Hy! I Am,<br/>Muhammad Miftahurrahman
+                        <p class="desc-profile">
+                            {{ majors }} |
+                            <span>
+                                <span>Front End Web Developer🚀</span>
+                                <span>UI/UX Design✨</span>
+                                <span>Front End Web Developer🚀</span>
+                                <span>UI/UX Design✨</span>
+                            </span>
+                        </p>
+                    </h1>
                 <div class="skills">
                     <div class="wrapper-skils">
                         <img src="../components/img/icons8-vue-js-48.png" alt="vue" class="skill1">
+                        <img src="../components/img/vuex-1.svg" alt="vue" class="skill1">
                         <img src="../components/img/icons8-react-native-48.png" alt="vue" class="skill1">
                         <img src="../components/img/icons8-c-48.png" alt="vue" class="skill1">
+                        <img src="../components/img/new-php-logo.png" alt="vue" class="skill1">
                         <img src="../components/img/icons8-tailwindcss-48.png" alt="vue" class="skill1">
                         <img src="../components/img/icons8-figma-48.png" alt="vue" class="skill1">
                     </div>
             </div>
             <div class="hire-me">
-                <button  href="mailto:your.email@example.com" class="buttonHire" @click="openEmail">
-                    Hire Me  
+                <button class="buttonHire">
+                    <p>Hire Me</p> 
                 </button>
             </div>
             </div>
             <div class="profile">
-                <img src="../components/img/Frame 11.png" alt="profile">
+                <img src="../components/img/uiux.png" alt="profile">
             </div>
         </div>
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#FCEDE6" fill-opacity=                     "1" d="M0,288L48,250.7C96,213,192,139,288,122.7C384,107,480,149,576,165.3C672,181,768,171,864,154.7C960,139,1056,117,1152,117.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-            </path>
-        </svg> -->
         <div class="about-me">
             <div class="wrapper-about">
-                <div class="text"> 
+                <div class="text"
+                    v-motion
+                    :initial="{ opacity: 0, y: 10 }"
+                    :visibleOnce="{ opacity: 1, y: 0 }"
+                > 
                     <h1>About</h1> 
                     <div class="text-content">
                         <p>I am a graduate of SMKS YMIK JAKARTA Vocational High School, majoring in Computer and Network Engineering. During my time at SMK I participated in extracurricular coding as well as the person in charge, and the competitions that I have participated in include :
@@ -53,13 +64,17 @@
                 </div>
             </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#FCEDE6" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,218.7C384,245,480,267,576,256C672,245,768,203,864,165.3C960,128,1056,96,1152,90.7C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
             </path>
-        </svg>
+        </svg> -->
         <div class="achivment">
             <h1>Achivment</h1>
-            <div class="carousel">
+            <div class="carousel"
+                v-motion
+                :initial="{ opacity: 0, y: 10 }"
+                :visibleOnce="{ opacity: 1, y: 0 }"
+            >
 
                 <div v-for="card in cards" :key="card.id" class="card">
                     <img :src="card.imageUrl" alt="Card Image">
@@ -91,67 +106,120 @@
         </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FCEDE6" fill-opacity="1" d="M0,64L40,106.7C80,149,160,235,240,234.7C320,235,400,149,480,122.7C560,96,640,128,720,128C800,128,880,96,960,85.3C1040,75,1120,85,1200,85.3C1280,85,1360,75,1400,69.3L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FCEDE6" fill-opacity="1" d="M0,224L40,192C80,160,160,96,240,80C320,64,400,96,480,101.3C560,107,640,85,720,85.3C800,85,880,107,960,128C1040,149,1120,171,1200,197.3C1280,224,1360,256,1400,272L1440,288L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+
+            <div class="contact-container">
+                <form action="POST" ref="form" @submit.prevent="sendEmail">
+                    <div class="name-fields">
+                        <div class="field">
+                            <input 
+                                type="text" 
+                                v-model="firstName" 
+                                placeholder="First Name" />
+                        </div>
+                        <div class="field">
+                            <input 
+                                type="text" 
+                                v-model="subject"
+                                placeholder="Subject of message"
+                            />
+                        </div>
+                    </div>
+    
+                    <div class="email-field field">
+                        <input 
+                            type="email" 
+                            v-model="email"  
+                            placeholder="Enter your Email"
+                        />
+                    </div>
+    
+                    <div class="field">
+                        <textarea
+                            type="textarea"
+                            v-model="message"
+                            placeholder="Enter Message"
+                        />
+                    </div>
+                    <div class="submitbutton field">
+                        <button type="submit" value="send">SUBMIT</button>
+                    </div>
+    
+                </form>
+            </div>
     </div>
 </template>
 
 <script>
+import emailjs from '@emailjs/browser';
     export default{
         data() {
             return {
+                firstName: '',
+                subject: '',
+                email: '',
+                message: '',
+                
                 cards: [
-<<<<<<< HEAD
-                    { id: 1, imageUrl: '../src/components/img/achivment/achiv.jpeg',title: 'Juara 1 Algoritma Kompetisi Pemrograman C/C++', description: 'Universitas Budi Luhur' },
-                    { id: 2, imageUrl: '../src/components/img/achivment/achiv2.jpg',title: 'Peserta Lomba CSS E-Sports Battle WPU EVENT OF THE YEAR', description: 'Universitas Pasundan Bandung' },
-                    { id: 3, imageUrl: '../src/components/img/achivment/achiv3.jpg',title: 'AWS Cloud Competition For Sagasitas Tech 2024', description: 'AWS Sagasitas For Tech 2024' },
-                    { id: 4, imageUrl: '../src/components/img/achivment/achiv4.jpg',title: 'Praktik Kerja Lapangan Komisi Pemilihan Umum Kota Jakarta Barat', description: 'Komisi Pemilihan Umum'},
-                    { id: 5, imageUrl: '../src/components/img/achivment/achiv5.jpg',title: 'Memulai Dasar Pemrograman untuk Menjadi Pengembang Software', description: 'Dicoding Indonesia' },
-                    { id: 6, imageUrl: '../src/components/img/achivment/achiv6.jpg',title: 'Belajar Dasar Structured Query Language ( SQL )' , description: 'Dicoding Indonesia'},
-                    { id: 7, imageUrl: '../src/components/img/achivment/achiv7.jpg',title: 'Belajar Dasar AI (Artificial Intelligence)', description: 'Dicoding Indonesia' },
-                    { id: 8, imageUrl: '../src/components/img/achivment/achiv8.jpg',title: 'Memulai Pemrograman dengan Python', description: 'Dicoding Indonesia' },
-                    { id: 9, imageUrl: '../src/components/img/achivment/achiv9.jpg',title: 'Memulai Pemrograman dengan C', description: 'Dicoding Indonesia'},
-                    { id: 10, imageUrl:'../src/components/img/achivment/achiv10.jpg',title: 'Dicoding Developer Coaching #103', description: 'Dicoding Indonesia'},
-                    { id: 11, imageUrl:'../src/components/img/achivment/achiv11.jpg',title: 'Javascript 10 Projects for Beginner', description: 'Udemy Course'},
-=======
-                    { id: 1, imageUrl: './src/assets/achivment/achiv.jpeg',title: 'Juara 1 Algoritma Kompetisi Pemrograman C/C++', description: 'Universitas Budi Luhur' },
-                    { id: 2, imageUrl: './src/assets/achivment/achiv2.jpg',title: 'Peserta Lomba CSS E-Sports Battle WPU EVENT OF THE YEAR', description: 'Universitas Pasundan Bandung' },
-                    { id: 3, imageUrl: './src/assets/achivment/achiv4.jpg',title: 'AWS Cloud Competition For Sagasitas Tech 2024', description: 'AWS Sagasitas For Tech 2024' },
-                    { id: 4, imageUrl: './src/assets/achivment/achiv5.jpg',title: 'Praktik Kerja Lapangan Komisi Pemilihan Umum Kota Jakarta Barat', description: 'Komisi Pemilihan Umum'},
-                    { id: 5, imageUrl: './src/assets/achivment/achiv3.jpg',title: 'Memulai Dasar Pemrograman untuk Menjadi Pengembang Software', description: 'Dicoding Indonesia' },
-                    { id: 6, imageUrl: './src/assets/achivment/achiv9.jpg',title: 'Belajar Dasar Structured Query Language ( SQL )' , description: 'Dicoding Indonesia'},
-                    { id: 7, imageUrl: './src/assets/achivment/achiv7.jpg',title: 'Belajar Dasar AI (Artificial Intelligence)', description: 'Dicoding Indonesia' },
-                    { id: 8, imageUrl: './src/assets/achivment/achiv8.jpg',title: 'Memulai Pemrograman dengan Python', description: 'Dicoding Indonesia' },
-                    { id: 9, imageUrl: './src/assets/achivment/achiv11.jpg',title: 'Memulai Pemrograman dengan C', description: 'Dicoding Indonesia'},
-                    { id: 10, imageUrl: './src/assets/achivment/achiv6.jpg',title: 'Dicoding Developer Coaching #103', description: 'Dicoding Indonesia'},
-                    { id: 11, imageUrl: './src/assets/achivment/achiv10.jpg',title: 'Javascript 10 Projects for Beginner', description: 'Udemy Course'},
->>>>>>> 31a45e598fc25d911232e12b6467f46766ba9d15
+                    { id: 1, imageUrl: '/public/achivment/achiv.jpeg',title: 'Juara 1 Algoritma Kompetisi Pemrograman C/C++', description: 'Universitas Budi Luhur' },
+                    { id: 2, imageUrl: '/public/achivment/achiv2.jpg',title: 'Peserta Lomba CSS E-Sports Battle WPU EVENT OF THE YEAR', description: 'Universitas Pasundan Bandung' },
+                    { id: 3, imageUrl: '/public/achivment/achiv4.jpg',title: 'AWS Cloud Competition For Sagasitas Tech 2024', description: 'AWS Sagasitas For Tech 2024' },
+                    { id: 4, imageUrl: '/public/achivment/achiv5.jpg',title: 'Praktik Kerja Lapangan Komisi Pemilihan Umum', description: 'Komisi Pemilihan Umum'},
+                    { id: 5, imageUrl: '/public/achivment/achiv3.jpg',title: 'Memulai Dasar Pemrograman untuk Menjadi Pengembang Software', description: 'Dicoding Indonesia' },
+                    { id: 6, imageUrl: '/public/achivment/achiv9.jpg',title: 'Belajar Dasar Structured Query Language ( SQL )' , description: 'Dicoding Indonesia'},
+                    { id: 7, imageUrl: '/public/achivment/achiv7.jpg',title: 'Belajar Dasar AI (Artificial Intelligence)', description: 'Dicoding Indonesia' },
+                    { id: 8, imageUrl: '/public/achivment/achiv8.jpg',title: 'Memulai Pemrograman dengan Python', description: 'Dicoding Indonesia' },
+                    { id: 9, imageUrl: '/public/achivment/achiv11.jpg',title: 'Memulai Pemrograman dengan C', description: 'Dicoding Indonesia'},
+                    { id: 10, imageUrl:'/public/achivment/achiv6.jpg',title: 'Dicoding Developer Coaching #103', description: 'Dicoding Indonesia'},
+                    { id: 11, imageUrl:'/public/achivment/achiv10.jpg',title: 'Javascript 10 Projects for Beginner', description: 'Udemy Course'},
                 ],
                 cardsProject: [
                     {
-                        id: 1, imageUrl: '../src/components/img/project1.png', description: 'Laravel 11, DBeaver, Spatie, MySQL, TailwindCSS',
+                        id: 1, imageUrl: '../src/components/img/anggabwa.png', description: 'Laravel 11, DBeaver, Spatie, MySQL, TailwindCSS',
                     },
                     {
                         id: 2, imageUrl: '../src/components/img/project3.png', title: 'Website Property Villa', description: 'Vue JS 3 & TypeScript',
                     },
                     {
-                        id: 3, imageUrl: '../src/components/img/project2.png', title: 'Card Project 1',
+                        id: 3, imageUrl: '../src/components/img/project2.png', title: 'Starbuck Coffee Company Clone', description: 'HTML & CSS'
                     },
                     {
-                        id: 4, imageUrl: 'https://cdn.dribbble.com/users/7677055/screenshots/17943042/media/d6581004b0dab170bce063b915c3930a.png?resize=1000x750&vertical=center', title: 'Card Project 1',
-                    },
-                    {
-                        id: 5, imageUrl: 'https://cdn.dribbble.com/userupload/4789690/file/original-8942e8d954dfa13fca253e26ec8527d6.png?resize=1200x900', title: 'Card Project 1'
+                        id: 4, imageUrl: '../src/components/img/project1.png', title: 'Toko Buah Super Murah', description: 'HTML & CSS'
                     },
                 ],
                 majors: "Student Informatics Enginering",
-                jobTitle: "Front End Web Developer"
-            }
+            };
         },
         methods: {
-            openEmail() {
-                alert('tstests')
+            sendEmail() {
+                const templateParams = {
+                    to_name: this.firstName,
+                    from_name: this.email,
+                    subject: this.subject,
+                    message: this.message,
+                };
+
+                console.log(templateParams)
+
+                emailjs
+                .sendForm('service_7fq8172', 'template_eo3d7z9', templateParams, {
+                    publicKey: 'FcLpyFVMcEm-ZbcwR'
+                }).then(
+                    () => {
+                        console.log('SUCCESS!');
+                    },
+                    (error) => {
+                        console.log('FAILED...', error.text);
+                    },
+                );
             },
+        },
+        mounted() {
+        // Inisialisasi EmailJS
+         emailjs.init('FcLpyFVMcEm-ZbcwR');
         }
-    }
+    };
+
+
 </script>
 
 <style scoped>
@@ -165,6 +233,61 @@
             font-family: "Poppins", sans-serif;
         }
 
+        .contact-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #ffffff;
+            height: 70vh;
+            width: 60%;
+            margin: 10px auto;
+            margin-bottom: 10rem;
+            padding: 10%;
+            color: black;
+        }
+        .field{
+            margin: 10px 0;
+        }
+        input,
+        textarea{
+            height: 50px;
+            width: 100%;
+            margin: 20px;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            outline: none;
+        }
+        textarea{
+            height: 100px;
+            border-bottom: 2px solid rgb(133, 133, 133);
+        }
+        .submitbutton button{
+            height: 50px;
+            width: 200px;
+            margin: 0 auto;
+            text-align: center;
+            font-weight: 300;
+            border-radius: 30px;
+            border: 2px solid rgb(133, 133, 133);
+            color: #000;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .submitbutton button:hover{
+            background-color: #7C00FE;
+            border: none;
+            color: #fff;
+            font-weight: 600;
+            transition: .3s all ease;
+        }
+        .contact-title{
+            text-align: center;
+        }
+
+        /* Hero Main */
         .hero{
             width: 100%;
             height: 100%;
@@ -172,13 +295,18 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            color: #000;
+            color: #fff;
+            text-align: center;
             /* margin-top: 4rem; */
         }
         .hero .hero-main{
             width: 100%;
             height: 100vh;
             background-color: #FCEDE6;
+            background-image: url('/src/components/img/desktop-2.png');
+            background-position: center;
+            background-repeat: no-repeat; 
+            background-size: cover;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -193,17 +321,52 @@
             font-weight: bold;
             font-size: 40px;
             margin-bottom: 10px;
-            color: #000;
+            color: #fff;
         }
+
         .hero .intro .desc-profile{
-            font-size: 20px;
-            color: #000;
-            font-weight: 700;
+            font-size: 1.25rem;
+            color: #ffffffac;
+            font-weight: bold;
             letter-spacing: 1px;
-            font-family: sans-serif;
+            font-family: 'Poppins', sans-serif;
+
+              :is(span) {
+                position: relative;
+                display: inline-block;
+                color: #f3f93a;
+                height: 2rem;
+                vertical-align: bottom;
+                overflow: hidden;
+                font-weight: bold;
+
+                :is(span) {
+                    display: block;
+                    animation: animateWords 5s infinite ease;
+                }
+            }
         }
-        .hero .intro p > span{
-            color: #00000098;
+
+        @keyframes animateWords{
+            0%{
+                transform: translateY(0%);
+            }
+
+            25%{
+                transform: translateY(-100%);
+            }
+
+            50%{
+                transform: translateY(-200%);
+            }
+
+            75%{
+                transform: translateY(-300%);
+            }
+
+            100%{
+                transform: translateY(-400%);
+            }
         }
         .hero .profile img{
             width: 550px;
@@ -224,7 +387,8 @@
         }
         .hero .hero-main .intro > .skills .wrapper-skils img{
             width: 55px;
-            height: 56px
+            height: 56px;
+            object-fit: contain;
         }
         .hero .hero-main .intro > .skills .skill1:hover,
         .hero .hero-main .intro > .skills .skill2:hover,
@@ -246,30 +410,197 @@
             height: 49px;
             margin-top: 56px;
             border-radius: 5px;
+            text-align: center;
         }
-        .hero .hire-me button{
-            width: 100%;
-            height: 100%;
+        
+        .hero .hire-me button {
             border: none;
-            outline: none;
-            border-radius: 5px;
-            font-weight: 600;
+            width: 140px;
+            height: 50px;
             color: #fff;
-            font-size: 17px;
-            background-color: #E56712;
+            z-index: 1;
+            display: flex;
+            background: #000;
+            position: relative;
             cursor: pointer;
+            text-align: center;
+            }
+
+        .hero .hire-me button p {
+            margin: 0 auto;
+            align-self: center;
+            font-size: 17px;
+            font-weight: bold;
+            text-align: center;
+            }
+
+        .hero .hire-me button::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            z-index: -1;
+            height: 10%;
+            bottom: 0;
+            clip-path: polygon(
+                0% 74%,
+                4% 75%,
+                8% 76%,
+                11% 77%,
+                15% 78%,
+                20% 78%,
+                25% 77%,
+                32% 77%,
+                37% 75%,
+                40% 74%,
+                43% 74%,
+                46% 73%,
+                52% 72%,
+                57% 72%,
+                65% 74%,
+                66% 75%,
+                71% 78%,
+                75% 82%,
+                81% 86%,
+                83% 88%,
+                88% 91%,
+                90% 94%,
+                94% 96%,
+                98% 98%,
+                100% 100%,
+                82% 100%,
+                0 100%
+            );
+            background: #8792eb;
+            transition: 0.2s ease;
+            }
+
+        .hero .hire-me button::before {
+            position: absolute;
+            content: "";
+            /*   bottom: 80%; */
+            transform: rotate(180deg);
+            width: 100%;
+            height: 10%;
+            transition: 0.2s ease;
+            /*   bottom:; */
+            z-index: -1;
+            clip-path: polygon(
+                0% 74%,
+                4% 75%,
+                8% 76%,
+                11% 77%,
+                15% 78%,
+                20% 78%,
+                25% 77%,
+                32% 77%,
+                37% 75%,
+                40% 74%,
+                43% 74%,
+                46% 73%,
+                52% 72%,
+                57% 72%,
+                65% 74%,
+                66% 75%,
+                71% 78%,
+                75% 82%,
+                81% 86%,
+                83% 88%,
+                88% 91%,
+                90% 94%,
+                94% 96%,
+                98% 98%,
+                100% 100%,
+                82% 100%,
+                0 100%
+            );
+            background: #8792eb;
+            }
+
+            .hero .hire-me button:hover::after {
+            clip-path: polygon(
+                0 30%,
+                9% 34%,
+                7% 39%,
+                11% 43%,
+                13% 33%,
+                17% 30%,
+                24% 34%,
+                25% 35%,
+                30% 31%,
+                30% 38%,
+                39% 33%,
+                35% 43%,
+                43% 45%,
+                55% 46%,
+                65% 74%,
+                67% 66%,
+                81% 57%,
+                75% 82%,
+                81% 86%,
+                83% 88%,
+                88% 91%,
+                90% 94%,
+                94% 96%,
+                98% 98%,
+                100% 100%,
+                82% 100%,
+                0 100%
+            );
+            height: 80%;
+            }
+
+            .hero .hire-me button:hover::before {
+            clip-path: polygon(
+                0 30%,
+                9% 34%,
+                7% 39%,
+                11% 43%,
+                13% 33%,
+                17% 30%,
+                24% 34%,
+                25% 35%,
+                30% 31%,
+                30% 38%,
+                39% 33%,
+                35% 43%,
+                43% 45%,
+                55% 46%,
+                65% 74%,
+                67% 66%,
+                81% 57%,
+                75% 82%,
+                81% 86%,
+                83% 88%,
+                88% 91%,
+                90% 94%,
+                94% 96%,
+                98% 98%,
+                100% 100%,
+                82% 100%,
+                0 100%
+            );
+            height: 80%;
         }
+
+        /* About Me */
         .hero .about-me{
             text-align: center;
             width: 100%;
-            padding: 1.5rem;
-            color: #000;
+            height: 100%;
+            padding: 4rem;
+            color: #000000;
+            background-image: url('/src/components/img/bg-baru.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
         .hero .about-me .wrapper-about{
+            width: 100%;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 3rem
+            gap: 3rem;
         }
         .hero .about-me h1{
             text-align: center;
@@ -285,6 +616,7 @@
             color: #fff;
             width: 100%;
             height: 100%;
+            padding: 4rem;
         }
         
         .hero .achivment h1,
@@ -404,9 +736,15 @@
             margin-top: 1rem;
         }
         .hero .about-me{
+            text-align: center;
             width: 100%;
-            padding: 1.5rem;
-            color: #000;
+            height: 100%;
+            padding: 4rem;
+            color: #000000;
+            background-image: url('/src/components/img/bg-white.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
         .hero .about-me .text p{
             display: flex;
@@ -467,131 +805,49 @@
 
 /* BREAKPOINTS 992px */
 @media only screen and (max-width: 992px){
-        .container {
-        width: 650px;
-        height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        position: relative;
-        border-radius: 3px;
-        border: 1px solid #3586ff;
-        background: linear-gradient(to right, #005c97, #363795);
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .hero .intro .desc-profile{
+            font-size: 1.25rem;
+            color: #000;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-family: 'Poppins', sans-serif;
+
+              :is(span) {
+                position: relative;
+                display: inline-block;
+                color: #7C00FE;
+                height: 2rem;
+                vertical-align: bottom;
+                overflow: hidden;
+                font-weight: bold;
+
+                :is(span) {
+                    display: block;
+                    animation: animateWords 5s infinite ease;
+                }
+            }
         }
 
-        .container form{
-            display: flex;
-        }
+        @keyframes animateWords{
+            0%{
+                transform: translateY(0%);
+            }
 
-        .container form .descr {
-        font-size: 20px;
-        font-weight: 500;
-        color: #e8e8e8;
-        margin-bottom: 25px;
-        margin-top: 25px;
-        text-align: center;
-        }
+            25%{
+                transform: translateY(-100%);
+            }
 
-        .container .form-image{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+            50%{
+                transform: translateY(-200%);
+            }
 
-        .container .form-image img{
-            width: 100px;
-            height: 100px;
-        }
+            75%{
+                transform: translateY(-300%);
+            }
 
-        .form {
-        display: flex;
-        flex-direction: column;
-        }
-
-        .input, textarea {
-        margin: 1em 0 1em 0;
-        width: 300px;
-        position: relative;
-        }
-
-        .input input, textarea {
-        font-size: 100%;
-        padding: 0.7em;
-        outline: none;
-        color: #e8e8e8;
-        border: none;
-        border-bottom: 2px solid #e8e8e8;
-        background: transparent;
-        border-radius: none;
-        width: 100%;
-        resize: none;
-        }
-
-        .input label {
-        font-size: 100%;
-        position: absolute;
-        left: 0;
-        color: #e8e8e8;
-        padding: 0.7em;
-        margin-left: 0.1em;
-        pointer-events: none;
-        transition: all 0.5s ease;
-        text-transform: uppercase;
-        }
-
-        .input :is(input:focus, input:valid)~label {
-        transform: translateY(-50%) scale(.9);
-        margin: 0em;
-        padding: 0.4em;
-        background: transparent;
-        }
-
-        .input textarea:focus ~ label,
-        .input textarea:valid ~ label {
-        transform: translateY(-50%) scale(.9);
-        margin: 0em;
-        padding: 0.4em;
-        background: transparent;
-        }
-
-        .inputGroup :is(input:focus, input:valid) {
-        border-color: rgb(37, 37, 211);
-        }
-
-        .form button {
-        color: #e8e8e8;
-        font-size: 15px;
-        align-self: flex-start;
-        padding: 0.6em;
-        border: none;
-        cursor: pointer;
-        margin-bottom: 50px;
-        background: transparent;
-        transition: all 0.3s ease-in-out;
-        position: relative;
-        overflow: hidden;
-        }
-
-        .form button:before {
-        content: "";
-        position: absolute;
-        bottom: 100%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #e8e8e8;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-        }
-
-        .form button:hover:before {
-        opacity: 0.2;
-        }
-
-        .form button:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            100%{
+                transform: translateY(-400%);
+            }
         }
 }
 
@@ -653,6 +909,7 @@
         }
         .hero .about-me{
             width: 100%;
+            height: 100vh;
             padding: 1.5rem;
             color: #000;
         }

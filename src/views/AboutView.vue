@@ -1,7 +1,11 @@
 <template>
     <div class="about-me">
             <div class="wrapper-about">
-                <div class="text"> 
+                <div class="text" 
+                    v-motion
+                    :initial="{ opacity: 0, y: 10 }"
+                    :visibleOnce="{ opacity: 1, y: 0 }"
+                > 
                     <h1>About</h1> 
                     <div class="text-content">
                         <p>I am a graduate of SMKS YMIK JAKARTA Vocational High School, majoring in Computer and Network Engineering. During my time at SMK I participated in extracurricular coding as well as the person in charge, and the competitions that I have participated in include :
@@ -32,9 +36,12 @@
             text-align: center;
             width: 100%;
             height: 100%;
-            padding: 1.5rem;
-            color: #000;
-            margin-bottom: 10rem;
+            padding: 4rem;
+            color: #000000;
+            /* background-image: url('/src/components/img/bg-white.png'); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
         .about-me .wrapper-about{
             display: flex;
