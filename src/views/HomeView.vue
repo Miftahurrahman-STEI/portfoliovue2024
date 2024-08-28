@@ -300,7 +300,6 @@ import emailjs from '@emailjs/browser';
         .hero .hero-main{
             width: 100%;
             height: 100vh;
-            background-color: #FCEDE6;
             background-image: url('/src/components/img/desktop-2.png');
             background-position: center;
             background-repeat: no-repeat; 
@@ -706,7 +705,7 @@ import emailjs from '@emailjs/browser';
             padding: 2rem;
             text-align: justify;
         }
-        .hero .hero-main .intro h2{
+        .hero .hero-main .intro h1{
             font-weight: bold;
             /* font-size: 40px; */
             color: #F0E5CF;
@@ -878,7 +877,6 @@ import emailjs from '@emailjs/browser';
         .hero .hero-main{
             width: 100%;
             height: 100%;
-            background-color: #FCEDE6;
             display: flex;
             flex-direction: column;
             padding-top: 6rem;
@@ -887,12 +885,15 @@ import emailjs from '@emailjs/browser';
             padding: 2rem;
             text-align: justify;
         }
-        .hero .hero-main .intro h2{
+        .hero .hero-main .intro h1{
+            font-family: "Poppins", sans-serif;
             font-weight: bold;
-            color: #F0E5CF;
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: #fff;
         }
-        .hero .intro p{
-            font-size: 15px;
+        .hero hero-main .intro p{
+            font-size: 10px;
             color: #F0E5CF;
             letter-spacing: 1px;
         }
