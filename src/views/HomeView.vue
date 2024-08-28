@@ -64,10 +64,6 @@
                 </div>
             </div>
         </div>
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#FCEDE6" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,218.7C384,245,480,267,576,256C672,245,768,203,864,165.3C960,128,1056,96,1152,90.7C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-            </path>
-        </svg> -->
         <div class="achivment">
             <h1>Achivment</h1>
             <div class="carousel"
@@ -77,7 +73,7 @@
             >
 
                 <div v-for="card in cards" :key="card.id" class="card">
-                    <img :src="card.imageUrl" alt="Card Image">
+                    <img v-bind:src="card.imageUrl" alt="Card Image">
                     <div class="card-body">
                         <h3 class="card-title">{{ card.title }}</h3>
                         <p class="card-desc">{{ card.description }}</p>
@@ -97,7 +93,7 @@
             <div class="carousel">
 
                 <div v-for="cardProject in cardsProject" :key="cardProject.id" class="card">
-                    <img :src="cardProject.imageUrl" alt="Card Image">
+                    <img v-bind:src="cardProject.imageUrl" alt="Card Image">
                     <h3>{{ cardProject.title }}</h3>
                     <p class="card-desc">{{ cardProject.description }}</p>
                 </div>
@@ -114,13 +110,16 @@
                             <input 
                                 type="text" 
                                 v-model="firstName" 
-                                placeholder="First Name" />
+                                placeholder="First Name" 
+                                required
+                            />
                         </div>
                         <div class="field">
                             <input 
                                 type="text" 
                                 v-model="subject"
                                 placeholder="Subject of message"
+                                required
                             />
                         </div>
                     </div>
@@ -130,6 +129,7 @@
                             type="email" 
                             v-model="email"  
                             placeholder="Enter your Email"
+                            required
                         />
                     </div>
     
@@ -138,6 +138,7 @@
                             type="textarea"
                             v-model="message"
                             placeholder="Enter Message"
+                            required
                         />
                     </div>
                     <div class="submitbutton field">
@@ -927,6 +928,7 @@ import emailjs from '@emailjs/browser';
             height: 100vh;
             padding: 1.5rem;
             color: #000;
+            background-image: url('/src/components/img/bg-baru.png');
         }
         .hero .about-me .text p{
             font-size: 10px;
