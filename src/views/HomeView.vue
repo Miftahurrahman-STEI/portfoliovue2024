@@ -695,7 +695,6 @@ import emailjs from '@emailjs/browser';
         .hero .hero-main{
             width: 100%;
             height: 100%;
-            background-color: #FCEDE6;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
