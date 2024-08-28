@@ -192,23 +192,21 @@ import emailjs from '@emailjs/browser';
         methods: {
             sendEmail() {
                 const templateParams = {
-                    to_name: this.firstName,
-                    from_name: this.email,
+                    from_name: this.firstName,
+                    email_id: this.email,
                     subject: this.subject,
                     message: this.message,
                 };
 
-                console.log(templateParams)
+                console.log(templateParams);
 
-                emailjs
-                .sendForm('service_7fq8172', 'template_eo3d7z9', templateParams, {
-                    publicKey: 'FcLpyFVMcEm-ZbcwR'
-                }).then(
-                    () => {
-                        console.log('SUCCESS!');
+                emailjs.send(
+                    'service_7fq8172', 'template_eo3d7z9', templateParams,
+                ).then((res) => {
+                        console.log('SUCCESS!' +  res.status);
                     },
                     (error) => {
-                        console.log('FAILED...', error.text);
+                        console.log('FAILED...'+ error.text);
                     },
                 );
             },
@@ -805,6 +803,21 @@ import emailjs from '@emailjs/browser';
 
 /* BREAKPOINTS 992px */
 @media only screen and (max-width: 992px){
+    .hero{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            color: #000;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .hero .skills img{
+            width: 15px;
+            height: 15px;
+        }
     .hero .intro .desc-profile{
             font-size: 1.25rem;
             color: #000;
@@ -815,7 +828,7 @@ import emailjs from '@emailjs/browser';
               :is(span) {
                 position: relative;
                 display: inline-block;
-                color: #7C00FE;
+                color: #f3f93a;
                 height: 2rem;
                 vertical-align: bottom;
                 overflow: hidden;
@@ -859,6 +872,8 @@ import emailjs from '@emailjs/browser';
             flex-direction: column;
             color: #000;
             padding: 0;
+            margin: 0;
+            overflow: hidden;
         }
         .hero .hero-main{
             width: 100%;
@@ -904,8 +919,8 @@ import emailjs from '@emailjs/browser';
             margin-top: 1rem;
         }
         .hero .skills img{
-            width: 20px;
-            height: 20px;
+            width: 15px;
+            height: 15px;
         }
         .hero .about-me{
             width: 100%;
@@ -914,6 +929,8 @@ import emailjs from '@emailjs/browser';
             color: #000;
         }
         .hero .about-me .text p{
+            font-size: 10px;
+            font-weight: bold;
             font-family: 'Nunito', sans-serif; 
         }
         .hero .achivment{
@@ -921,6 +938,11 @@ import emailjs from '@emailjs/browser';
             color: #fff;
             width: 100%;
             height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            flex-direction: column;
         }
         .hero .achivment h1{
             margin-bottom: 1.5rem;
@@ -929,42 +951,59 @@ import emailjs from '@emailjs/browser';
             font-family: 'Nunito', sans-serif;
             color: gainsboro;
         }
-        .hero .achivment .carousel,
-        .hero .projects .carousel{
+
+        .contact-container{
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #ffffff;
+            height: 70vh;
+            width: 60%;
+            margin: 10px auto;
+            margin-bottom: 10rem;
+            padding: 10%;
+            color: black;
+        }
+        .field{
+            margin: 10px 0;
+        }
+        input,
+        textarea{
+            height: 50px;
+            width: 100%;
+            margin: 20px;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            outline: none;
+        }
+        textarea{
+            height: 100px;
+            border-bottom: 2px solid rgb(133, 133, 133);
+        }
+        .submitbutton button{
+            height: 50px;
+            width: 200px;
+            margin: 0 auto;
+            text-align: center;
+            font-weight: 300;
+            border-radius: 30px;
+            border: 2px solid rgb(133, 133, 133);
+            color: #000;
+            font-weight: 600;
+            display: flex;
             justify-content: center;
             align-items: center;
-            gap: 1rem;
         }
-        .hero .achivment .carousel .card,
-        .hero .projects .carousel .card{
-            width: 300px;
-            max-width: 300px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-            transition: transform 0.3s ease-in-out;
-            z-index: 1;
-            background-color: #fff;
+        .submitbutton button:hover{
+            background-color: #7C00FE;
+            border: none;
+            color: #fff;
+            font-weight: 600;
+            transition: .3s all ease;
         }
-        .hero .achivment .carousel .card p{
-            color: #000;
-        }
-        .hero .projects .carousel .card p{
-            color: #000;
-        }
-        .hero .achivment .carousel .card img,
-        .hero .projects .carousel .card img{
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-        .hero .projects .carousel .card img{
-            object-fit: contain;
+        .contact-title{
+            text-align: center;
         }
 }
 </style>
