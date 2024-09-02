@@ -53,7 +53,7 @@
         .about-me h1{
             text-align: center;
         }
-        .about-me .text{
+        .about-me .text {
             width: 800px;
             font-size: 20px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
