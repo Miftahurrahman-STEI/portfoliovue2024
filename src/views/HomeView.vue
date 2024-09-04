@@ -15,13 +15,13 @@
                     </h1>
                 <div class="skills">
                     <div class="wrapper-skils">
-                        <img src="../components/img/icons8-vue-js-48.png" alt="vue" class="skill1">
-                        <img src="../components/img/vuex-1.svg" alt="vue" class="skill1">
-                        <img src="../components/img/icons8-react-native-48.png" alt="vue" class="skill1">
-                        <img src="../components/img/icons8-c-48.png" alt="vue" class="skill1">
-                        <img src="../components/img/new-php-logo.png" alt="vue" class="skill1">
-                        <img src="../components/img/icons8-tailwindcss-48.png" alt="vue" class="skill1">
-                        <img src="../components/img/icons8-figma-48.png" alt="vue" class="skill1">
+                        <img src="/public/img/icons8-vue-js-48.png" alt="vue" class="skill1">
+                        <img src="/public/img/vuex-1.svg" alt="vue" class="skill1">
+                        <img src="/public/img/icons8-react-native-48.png" alt="vue" class="skill1">
+                        <img src="/public/img/icons8-c-48.png" alt="vue" class="skill1">
+                        <img src="/public/img/new-php-logo.png" alt="vue" class="skill1">
+                        <img src="/public/img/icons8-tailwindcss-48.png" alt="vue" class="skill1">
+                        <img src="/public/img/icons8-figma-48.png" alt="vue" class="skill1">
                     </div>
             </div>
             <div class="hire-me">
@@ -31,7 +31,7 @@
             </div>
             </div>
             <div class="profile">
-                <img src="../components/img/uiux.png" alt="profile">
+                <img src="/public/img/uiux.png" alt="profile">
             </div>
         </div>
         <div class="about-me">
@@ -160,13 +160,13 @@
             <div class="wrapper-experience">
                 <div class="content-experience">
                     <div class="expert-skill">
-                            <img src="../components/img/icons8-vue-js-48.png" alt="vue" class="skill1">
-                            <img src="../components/img/vuex-1.svg" alt="vue" class="skill1">
-                            <img src="../components/img/icons8-react-native-48.png" alt="vue" class="skill1">
-                            <img src="../components/img/icons8-c-48.png" alt="vue" class="skill1">
-                            <img src="../components/img/new-php-logo.png" alt="vue" class="skill1">
-                            <img src="../components/img/icons8-tailwindcss-48.png" alt="vue" class="skill1">
-                            <img src="../components/img/icons8-figma-48.png" alt="vue" class="skill1">
+                            <img src="/public/img/icons8-vue-js-48.png" alt="vue" class="skill1">
+                            <img src="/public/img/vuex-1.svg" alt="vue" class="skill1">
+                            <img src="/public/img/icons8-react-native-48.png" alt="vue" class="skill1">
+                            <img src="/public/img/icons8-c-48.png" alt="vue" class="skill1">
+                            <img src="/public/img/new-php-logo.png" alt="vue" class="skill1">
+                            <img src="/public/img/icons8-tailwindcss-48.png" alt="vue" class="skill1">
+                            <img src="/public/img/icons8-figma-48.png" alt="vue" class="skill1">
                             <img src="https://brandlogo.org/wp-content/uploads/2024/02/MySQL-Logo-300x300.png.webp" alt="vue" class="skill1">
                     </div>
                     <div class="expert-cards">
@@ -202,10 +202,26 @@
             </div>
             <div class="carousel">
 
-                <div v-for="cardProject in cardsProject" :key="cardProject.id" class="card">
-                    <img v-bind:src="cardProject.imageUrl" alt="Card Image">
-                    <h3>{{ cardProject.title }}</h3>
-                    <p class="card-desc">{{ cardProject.description }}</p>
+                <div class="card">
+                    <img src="/public/img/project1.png" />
+                    <div class="card-body">
+                        <h3>E-Commerce Toko Buah Super Murah</h3>
+                        <p>Build with HTML and CSS</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/public/img/project2.png" />
+                    <div class="card-body">
+                        <h3>Cloning website Starbucks Company</h3>
+                        <p>Build with HTML and CSS</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/public/img/project3.png" />
+                    <div class="card-body">
+                        <h3>Project client website property villa</h3>
+                        <p>Build with Vue JS 3</p>
+                    </div>
                 </div>
 
             </div>
@@ -268,21 +284,7 @@ import emailjs from '@emailjs/browser';
                 subject: '',
                 email: '',
                 message: '',
-                
-                cardsProject: [
-                    {
-                        id: 1, imageUrl: '../src/components/img/anggabwa.png', description: 'Laravel 11, DBeaver, Spatie, MySQL, TailwindCSS',
-                    },
-                    {
-                        id: 2, imageUrl: '../src/components/img/project3.png', title: 'Website Property Villa', description: 'Vue JS 3 & TypeScript',
-                    },
-                    {
-                        id: 3, imageUrl: '../src/components/img/project2.png', title: 'Starbuck Coffee Company Clone', description: 'HTML & CSS'
-                    },
-                    {
-                        id: 4, imageUrl: '../src/components/img/project1.png', title: 'Toko Buah Super Murah', description: 'HTML & CSS'
-                    },
-                ],
+
                 majors: "Student Informatics Enginering",
             };
         },
@@ -343,7 +345,7 @@ import emailjs from '@emailjs/browser';
         .hero .hero-main{
             width: 100%;
             height: 100vh;
-            background-image: url('/src/components/img/desktop-2.png');
+            background-image: url('/public/img/desktop-2.png');
             background-position: center;
             background-repeat: no-repeat; 
             background-size: cover;
@@ -629,7 +631,7 @@ import emailjs from '@emailjs/browser';
             height: 100%;
             padding: 4rem;
             color: #000000;
-            background-image: url('/src/components/img/bg-baru.png');
+            background-image: url('/public/img/bg-baru.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -652,7 +654,7 @@ import emailjs from '@emailjs/browser';
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .hero .achivment{
-            background-image: url('/src/components/img/bg-baru.png');
+            background-image: url('/public/img/bg-baru.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -666,7 +668,7 @@ import emailjs from '@emailjs/browser';
             width: 100%;
             height: 100%;
             padding: 4rem;
-            background-image: url('/src/components/img/bg-baru.png');
+            background-image: url('/public/img/bg-baru.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -742,7 +744,7 @@ import emailjs from '@emailjs/browser';
             padding: 10rem;
             width: 100%;
             height: 100%;
-            background-image: url('/src/components/img/bg-baru.png');
+            background-image: url('/public/img/bg-baru.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -918,7 +920,7 @@ import emailjs from '@emailjs/browser';
             height: 100%;
             padding: 4rem;
             color: #000000;
-            background-image: url('/src/components/img/bg-white.png');
+            background-image: url('/public/img/bg-white.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -1108,7 +1110,7 @@ import emailjs from '@emailjs/browser';
             height: 100vh;
             padding: 1.5rem;
             color: #000;
-            background-image: url('/src/components/img/bg-baru.png');
+            background-image: url('/public/img/bg-baru.png');
         }
         .hero .about-me .text p{
             font-size: 10px;
