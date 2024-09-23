@@ -181,15 +181,6 @@
                                 <li>fix printer sharing issues</li>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="https://www.mercubuana.ac.id/img/logo_baru_umb.jpg" />
-                            <div class="title">
-                                <h2>DATA ANALYST, Mercu Buana University</h2>
-                                <p>August, 2024 - Present</p>
-                                <li>manage student data</li>
-                                <li>designing content in wordpress</li>
-                            </div>
-                        </div>
     
                     </div>
                 </div>
@@ -1111,6 +1102,9 @@ import emailjs from '@emailjs/browser';
             padding: 1.5rem;
             color: #000;
             background-image: url('/public/img/bg-baru.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
         .hero .about-me .text p{
             font-size: 10px;
