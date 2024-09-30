@@ -214,6 +214,27 @@
                         <p>Build with Vue JS 3</p>
                     </div>
                 </div>
+                <div class="card">
+                    <img src="/public/img/project4.png" />
+                    <div class="card-body">
+                        <h3>Design website property, villa, warehouse</h3>
+                        <p>Build with Figma</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/public/img/project5.png" />
+                    <div class="card-body">
+                        <h3>Design website home furniture</h3>
+                        <p>Build with Figma</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/public/img/project6.png" />
+                    <div class="card-body">
+                        <h3>Design website home furniture</h3>
+                        <p>Build with Figma</p>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -704,8 +725,14 @@ import emailjs from '@emailjs/browser';
             padding: 20px;
             font-weight: 400;
         }
-        .hero .achivment .carousel .card .card-desc,
-        .hero .projects .carousel .card .card-desc{
+        .hero .achivment .carousel .card .card-body,
+        .hero .projects .carousel .card .card-body{
+            padding: 10px;
+            font-weight: 500;
+        }
+
+        .hero .achivment .carousel .card .card-body p,
+        .hero .projects .carousel .card .card-body p{
             padding: 10px;
             font-weight: 500;
         }
