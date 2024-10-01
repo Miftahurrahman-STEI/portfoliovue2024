@@ -806,26 +806,26 @@ import emailjs from '@emailjs/browser';
         .hero .experience .content-experience .expert-cards .card{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             align-items: center;
+            text-align: left;
             gap: 17px;
             background: #19376b;
             background: linear-gradient(90deg, #19376b 100%, rgba(25, 55, 100, 0) 100%);
             border-radius: 10px;
             padding: 24px;
+            min-width: 500px;
         }
         .hero .experience .content-experience .expert-cards .card img {
             margin: 20px;
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
         }
         .hero .experience .content-experience .expert-cards .card .desc{
             display: flex;
             align-items: center;
             flex-direction: column;
-        }
-        .hero .experience .content-experience .expert-cards .card img{
-            width: 60px;
-            height: 60px;
-            object-fit: contain;
-            margin-right: 10px;
         }
 
         .contact-container{
@@ -938,7 +938,7 @@ import emailjs from '@emailjs/browser';
             height: 100%;
             padding: 4rem;
             color: #000000;
-            background-image: url('/public/img/bg-white.png');
+            background-image: url('/public/img/bg-baru.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -952,7 +952,10 @@ import emailjs from '@emailjs/browser';
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .hero .achivment{
-            background-color: #FCEDE6;
+            background-image: url('/public/img/bg-baru.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             color: #fff;
             width: 100%;
             height: 100%;
@@ -1139,7 +1142,10 @@ import emailjs from '@emailjs/browser';
             font-family: 'Nunito', sans-serif; 
         }
         .hero .achivment{
-            background-color: #FCEDE6;
+            background-image: url('/public/img/bg-baru.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             color: #fff;
             width: 100%;
             height: 100%;
