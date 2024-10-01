@@ -91,7 +91,6 @@
 
 <style scoped>
          .achivment{
-            background-color: #FCEDE6;
             color: #fff;
             width: 100%;
             height: 100%;
@@ -126,11 +125,15 @@
             z-index: 1;
             background-color: #fff;
         }
-         .achivment .carousel .card .card-title{
-            width: 100%;
-            font-size: 1px;
-            padding: 20px;
-            font-weight: 400;
+        .achivment .carousel .card .card-body,
+        .projects .carousel .card .card-body{
+            padding: 10px;
+            font-weight: 500;
+        }
+        .achivment .carousel .card .card-body p,
+        .projects .carousel .card .card-body p{
+            padding: 10px;
+            font-weight: 500;
         }
          .achivment .carousel .card .card-desc{
             padding: 10px;
