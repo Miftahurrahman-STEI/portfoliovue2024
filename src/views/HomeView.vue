@@ -1,3 +1,46 @@
+<script>
+import emailjs from '@emailjs/browser';
+
+    export default{
+        data() {
+            return {
+                firstName: '',
+                subject: '',
+                email: '',
+                message: '',
+
+                majors: "Student Informatics Enginering",
+            };
+        },
+        methods: {
+            sendEmail() {
+                const templateParams = {
+                    from_name: this.firstName,
+                    email_id: this.email,
+                    subject: this.subject,
+                    message: this.message,
+                };
+
+                console.log(templateParams);
+
+                emailjs.send(
+                    'service_7fq8172', 'template_eo3d7z9', templateParams,
+                ).then((res) => {
+                        console.log('SUCCESS!' +  res.status);
+                    },
+                    (error) => {
+                        console.log('FAILED...'+ error.text);
+                    },
+                );
+            },
+        },
+        mounted() {
+        // Inisialisasi EmailJS
+         emailjs.init('FcLpyFVMcEm-ZbcwR');
+        }
+    };
+</script>
+
 <template>
     <div class="hero">
         <div class="hero-main">
@@ -231,7 +274,7 @@
                 <div class="card">
                     <img src="/public/img/project6.png" />
                     <div class="card-body">
-                        <h3>Design website home furniture</h3>
+                        <h3>Design Project Website School</h3>
                         <p>Build with Figma</p>
                     </div>
                 </div>
@@ -285,51 +328,6 @@
             </div>
     </div>
 </template>
-
-<script>
-import emailjs from '@emailjs/browser';
-
-    export default{
-        data() {
-            return {
-                firstName: '',
-                subject: '',
-                email: '',
-                message: '',
-
-                majors: "Student Informatics Enginering",
-            };
-        },
-        methods: {
-            sendEmail() {
-                const templateParams = {
-                    from_name: this.firstName,
-                    email_id: this.email,
-                    subject: this.subject,
-                    message: this.message,
-                };
-
-                console.log(templateParams);
-
-                emailjs.send(
-                    'service_7fq8172', 'template_eo3d7z9', templateParams,
-                ).then((res) => {
-                        console.log('SUCCESS!' +  res.status);
-                    },
-                    (error) => {
-                        console.log('FAILED...'+ error.text);
-                    },
-                );
-            },
-        },
-        mounted() {
-        // Inisialisasi EmailJS
-         emailjs.init('FcLpyFVMcEm-ZbcwR');
-        }
-    };
-
-
-</script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');

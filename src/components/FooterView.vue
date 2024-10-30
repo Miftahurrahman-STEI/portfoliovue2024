@@ -15,7 +15,7 @@
     </footer>
 </template>
 
-<style setup>
+<style scoped>
         footer{
             position: relative;
             width: 100%;
@@ -30,17 +30,17 @@
             justify-content: flex-end;
             z-index: -1;
         }
-        footer .social_icon{
+        footer :deep(.social_icon){
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 10px 0;
         }
-        footer .social_icon li{
+        footer :deep(.social_icon li){
             list-style: none;
         }
-        footer .social_icon li a{
+        footer :deep(.social_icon li a){
             font-size: 2em;
             color: #fff;
             margin: 0 10px;
@@ -48,17 +48,17 @@
             transition: 0.5s;
             cursor: pointer;
         }
-        footer .social_icon li a:hover{
+        footer :deep(.social_icon li a:hover){
             transform: translateY(-10px);
         }
-        footer .menu li a{
+        footer :deep(.menu li a){
             font-size: 1.2em;
             color: #fff;
             margin: 0 10px;
             display: inline-block;
             text-decoration: none;
         }
-        footer .menu li a:hover{
+        footer :deep(.menu li a:hover){
             opacity: 1;
         }
         footer p{
