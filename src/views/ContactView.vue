@@ -1,43 +1,47 @@
 <template>
     <div class="container">
         <div class="contact-container">
-                    <form action="POST" ref="form" @submit.prevent="sendEmail">
-                        <div class="name-fields">
-                            <div class="field">
-                                <input 
-                                    type="text" 
-                                    v-model="firstName" 
-                                    placeholder="First Name" />
-                            </div>
-                            <div class="field">
-                                <input 
-                                    type="text" 
-                                    v-model="subject"
-                                    placeholder="Subject of message"
-                                />
-                            </div>
-                        </div>
-        
-                        <div class="email-field field">
-                            <input 
-                                type="email" 
-                                v-model="email"  
-                                placeholder="Enter your Email"
-                            />
-                        </div>
-        
+            <form action="POST" ref="form" @submit.prevent="sendEmail">
+                    <div class="name-fields">
                         <div class="field">
-                            <textarea
-                                type="textarea"
-                                v-model="message"
-                                placeholder="Enter Message"
+                            <input 
+                                type="text" 
+                                v-model="firstName" 
+                                placeholder="First Name" 
+                                required
                             />
                         </div>
-                        <div class="submitbutton field">
-                            <button type="submit" value="send">SUBMIT</button>
+                        <div class="field">
+                            <input 
+                                type="text" 
+                                v-model="subject"
+                                placeholder="Subject of message"
+                                required
+                            />
                         </div>
-        
-                    </form>
+                    </div>
+    
+                    <div class="email-field field">
+                        <input 
+                            type="email" 
+                            v-model="email"  
+                            placeholder="Enter your Email"
+                            required
+                        />
+                    </div>
+    
+                    <div class="field">
+                        <textarea
+                            type="textarea"
+                            v-model="message"
+                            placeholder="Enter Message"
+                            required
+                        />
+                    </div>
+                    <div class="submitbutton field">
+                        <button type="submit" value="send">SUBMIT</button>
+                    </div>
+                </form>
         </div>
     </div>
 </template>
@@ -45,44 +49,44 @@
 <script>
 import emailjs from '@emailjs/browser';
 
-    export default{
-        data() {
-            return {
-                firstName: '',
-                subject: '',
-                email: '',
-                message: '',
+export default{
+    data() {
+        return {
+            firstName: '',
+            subject: '',
+            email: '',
+            message: '',
+
+            majors: "Student Informatics Enginering",
+        };
+    },
+    methods: {
+        sendEmail() {
+            const templateParams = {
+                from_name: this.firstName,
+                email_id: this.email,
+                subject: this.subject,
+                message: this.message,
             };
-        },
-        methods: {
-            sendEmail() {
-                const templateParams = {
-                    to_name: this.firstName,
-                    from_name: this.email,
-                    subject: this.subject,
-                    message: this.message,
-                };
 
-                console.log(templateParams)
+            console.log(templateParams);
 
-                emailjs
-                .sendForm('service_7fq8172', 'template_eo3d7z9', templateParams, {
-                    publicKey: 'FcLpyFVMcEm-ZbcwR'
-                }).then(
-                    () => {
-                        console.log('SUCCESS!');
-                    },
-                    (error) => {
-                        console.log('FAILED...', error.text);
-                    },
-                );
-            },
+            emailjs.send(
+                'service_7fq8172', 'template_eo3d7z9', templateParams,
+            ).then((res) => {
+                    console.log('SUCCESS!' +  res.status);
+                },
+                (error) => {
+                    console.log('FAILED...'+ error.text);
+                },
+            );
         },
-        mounted() {
-        // Inisialisasi EmailJS
-         emailjs.init('FcLpyFVMcEm-ZbcwR');
-        }
+    },
+    mounted() {
+    // Inisialisasi EmailJS
+     emailjs.init('FcLpyFVMcEm-ZbcwR');
     }
+};
 </script>
 
 <style scoped>
