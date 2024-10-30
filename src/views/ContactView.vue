@@ -74,10 +74,10 @@ export default{
             emailjs.send(
                 'service_7fq8172', 'template_eo3d7z9', templateParams,
             ).then((res) => {
-                    console.log('SUCCESS!' +  res.status);
+                    alert('SUCCESS MENGIRIM PESAN!');
                 },
                 (error) => {
-                    console.log('FAILED...'+ error.text);
+                    alert('GAGAL MENGIRIM PESAN ');
                 },
             );
         },
