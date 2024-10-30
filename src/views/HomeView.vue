@@ -221,7 +221,7 @@ import emailjs from '@emailjs/browser';
                                 <p>Oct, 2022 - Nov, 2022</p>
                                 <li>Staff Financial Data Input</li>
                                 <li>fix printer sharing issues</li>
-                                <li>fix printer sharing issues</li>
+                                <li>input political party membership data</li>
                             </div>
                         </div>
     
