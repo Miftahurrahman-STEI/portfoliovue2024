@@ -5,7 +5,7 @@ import { createApp } from 'vue'
 import { MotionPlugin } from '@vueuse/motion'
 
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from './views/HomeView.vue'
+import HomeView from '/src/views/HomeView.vue'
 
 import Navigation from './components/NavbarView.vue'
 import Footer from './components/FooterView.vue'

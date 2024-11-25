@@ -58,23 +58,23 @@ import emailjs from '@emailjs/browser';
                     </h1>
                 <div class="skills">
                     <div class="wrapper-skils">
-                        <img src="/public/img/icons8-vue-js-48.png" alt="vue" class="skill1">
-                        <img src="/public/img/vuex-1.svg" alt="vue" class="skill1">
-                        <img src="/public/img/icons8-react-native-48.png" alt="vue" class="skill1">
-                        <img src="/public/img/icons8-c-48.png" alt="vue" class="skill1">
-                        <img src="/public/img/new-php-logo.png" alt="vue" class="skill1">
-                        <img src="/public/img/icons8-tailwindcss-48.png" alt="vue" class="skill1">
-                        <img src="/public/img/icons8-figma-48.png" alt="vue" class="skill1">
+                        <img src="/dist/img/icons8-vue-js-48.png" alt="vue" class="skill1">
+                        <img src="/dist/img/vuex-1.svg" alt="vue" class="skill1">
+                        <img src="/dist/img/icons8-react-native-48.png" alt="vue" class="skill1">
+                        <img src="/dist/img/icons8-c-48.png" alt="vue" class="skill1">
+                        <img src="/dist/img/new-php-logo.png" alt="vue" class="skill1">
+                        <img src="/dist/img/icons8-tailwindcss-48.png" alt="vue" class="skill1">
+                        <img src="/dist/img/icons8-figma-48.png" alt="vue" class="skill1">
                     </div>
             </div>
             <div class="hire-me">
-                <button class="buttonHire">
-                    <p>Hire Me</p> 
-                </button>
+                <a href="/dist/hire/CV MUHAMMAD MIFTAHURRAHMAN.pdf" class="buttonHire">
+                    <p>Hire Me</p>
+                </a>
             </div>
             </div>
             <div class="profile">
-                <img src="/public/img/uiux.png" alt="profile">
+                <img src="/dist/img/Frame 18.png" alt="profile">
             </div>
         </div>
         <div class="about-me">
@@ -108,7 +108,7 @@ import emailjs from '@emailjs/browser';
             </div>
         </div>
         <div class="achivment">
-            <h1>Achivment</h1>
+            <h1>Achievement</h1>
             <div class="carousel"
                 v-motion
                 :initial="{ opacity: 0, y: 10 }"
@@ -116,77 +116,77 @@ import emailjs from '@emailjs/browser';
             >
 
                 <div class="card">
-                    <img src="/public/achivment/achiv.jpeg" />
+                    <img src="/dist/achivment/achiv.jpeg" />
                     <div class="card-body">
                         <h3>Juara 1 Algoritma Kompetisi Pemrograman C/C++</h3>
                         <p>Universitas Budi Luhur</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/public/achivment/achiv2.jpg" />
+                    <img src="/dist/achivment/achiv2.jpg" />
                     <div class="card-body">
                         <h3>Peserta Lomba CSS E-Sports Battle WPU EVENT OF THE YEAR</h3>
                         <p>Universitas Pasundan Bandung</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/public/achivment/achiv4.jpg" />
+                    <img src="/dist/achivment/achiv4.jpg" />
                     <div class="card-body">
                         <h3>AWS Cloud Competition For Sagasitas Tech 2024</h3>
                         <p>AWS Sagasitas For Tech 2024</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/public/achivment/achiv5.jpg" />
+                    <img src="/dist/achivment/achiv5.jpg" />
                     <div class="card-body">
                         <h3>Praktik Kerja Lapangan Komisi Pemilihan Umum</h3>
                         <p>Komisi Pemilihan Umum</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/public/achivment/achiv3.jpg" />
+                    <img src="/dist/achivment/achiv3.jpg" />
                     <div class="card-body">
                         <h3>Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/public/achivment/achiv9.jpg" />
+                    <img src="/dist/achivment/achiv9.jpg" />
                     <div class="card-body">
                         <h3>Belajar Dasar Structured Query Language ( SQL )</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/public/achivment/achiv7.jpg" />
+                    <img src="/dist/achivment/achiv7.jpg" />
                     <div class="card-body">
                         <h3>Belajar Dasar AI (Artificial Intelligence)</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/public/achivment/achiv8.jpg" />
+                    <img src="/dist/achivment/achiv8.jpg" />
                     <div class="card-body">
                         <h3>Memulai Pemrograman dengan Python</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/public/achivment/achiv11.jpg" />
+                    <img src="/dist/achivment/achiv11.jpg" />
                     <div class="card-body">
                         <h3>Memulai Pemrograman dengan C</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/public/achivment/achiv6.jpg" />
+                    <img src="/dist/achivment/achiv6.jpg" />
                     <div class="card-body">
                         <h3>Dicoding Developer Coaching #103</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/public/achivment/achiv10.jpg" />
+                    <img src="/dist/achivment/achiv10.jpg" />
                     <div class="card-body">
                         <h3>Javascript 10 Projects for Beginner</h3>
                         <p>Udemy Course</p>
@@ -203,13 +203,13 @@ import emailjs from '@emailjs/browser';
             <div class="wrapper-experience">
                 <div class="content-experience">
                     <div class="expert-skill">
-                            <img src="/public/img/icons8-vue-js-48.png" alt="vue" class="skill1">
-                            <img src="/public/img/vuex-1.svg" alt="vue" class="skill1">
-                            <img src="/public/img/icons8-react-native-48.png" alt="vue" class="skill1">
-                            <img src="/public/img/icons8-c-48.png" alt="vue" class="skill1">
-                            <img src="/public/img/new-php-logo.png" alt="vue" class="skill1">
-                            <img src="/public/img/icons8-tailwindcss-48.png" alt="vue" class="skill1">
-                            <img src="/public/img/icons8-figma-48.png" alt="vue" class="skill1">
+                            <img src="/dist/img/icons8-vue-js-48.png" alt="vue" class="skill1">
+                            <img src="/dist/img/vuex-1.svg" alt="vuex" class="skill1">
+                            <img src="/dist/img/icons8-react-native-48.png" alt="react" class="skill1">
+                            <img src="/dist/img/icons8-c-48.png" alt="c" class="skill1">
+                            <img src="/dist/img/new-php-logo.png" alt="php" class="skill1">
+                            <img src="/dist/img/icons8-tailwindcss-48.png" alt="tailwind" class="skill1">
+                            <img src="/dist/img/icons8-figma-48.png" alt="figma" class="skill1">
                             <img src="https://brandlogo.org/wp-content/uploads/2024/02/MySQL-Logo-300x300.png.webp" alt="vue" class="skill1">
                     </div>
                     <div class="expert-cards">
@@ -218,7 +218,7 @@ import emailjs from '@emailjs/browser';
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/KPU_Logo.svg/925px-KPU_Logo.svg.png" />
                             <div class="title">
                                 <h2>IT SUPPORT, KPU Jakarta Barat</h2>
-                                <p>Oct, 2022 - Nov, 2022</p>
+                                <p>Oct 2022 - Nov 2022</p>
                                 <li>Staff Financial Data Input</li>
                                 <li>fix printer sharing issues</li>
                                 <li>input political party membership data</li>
@@ -237,42 +237,42 @@ import emailjs from '@emailjs/browser';
             <div class="carousel">
 
                 <div class="card">
-                    <img src="/public/img/project1.png" />
+                    <img src="/dist/img/project1.png" />
                     <div class="card-body">
                         <h3>E-Commerce Toko Buah Super Murah</h3>
                         <p>Build with HTML and CSS</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/public/img/project2.png" />
+                    <img src="/dist/img/project2.png" />
                     <div class="card-body">
                         <h3>Cloning website Starbucks Company</h3>
                         <p>Build with HTML and CSS</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/public/img/project3.png" />
+                    <img src="/dist/img/project3.png" />
                     <div class="card-body">
                         <h3>Project client website property villa</h3>
                         <p>Build with Vue JS 3</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/public/img/project4.png" />
+                    <img src="/dist/img/project4.png" />
                     <div class="card-body">
                         <h3>Design website property, villa, warehouse</h3>
                         <p>Build with Figma</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/public/img/project5.png" />
+                    <img src="/dist/img/project5.png" />
                     <div class="card-body">
                         <h3>Design website home furniture</h3>
                         <p>Build with Figma</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/public/img/project6.png" />
+                    <img src="/dist/img/project6.png" />
                     <div class="card-body">
                         <h3>Design Project Website School</h3>
                         <p>Build with Figma</p>
@@ -355,7 +355,7 @@ import emailjs from '@emailjs/browser';
         .hero .hero-main{
             width: 100%;
             height: 100vh;
-            background-image: url('/public/img/desktop-2.png');
+            background-image: url('/dist/img/desktop-2.png');
             background-position: center;
             background-repeat: no-repeat; 
             background-size: cover;
@@ -421,7 +421,7 @@ import emailjs from '@emailjs/browser';
             }
         }
         .hero .profile img{
-            width: 550px;
+            width: 500px;
             height: 100%;
             object-fit: cover;
             border-radius: 10px;
@@ -465,10 +465,11 @@ import emailjs from '@emailjs/browser';
             text-align: center;
         }
         
-        .hero .hire-me button {
+        .hero .hire-me .buttonHire {
             border: none;
             width: 140px;
             height: 50px;
+            text-decoration: none;
             color: #fff;
             z-index: 1;
             display: flex;
@@ -476,9 +477,9 @@ import emailjs from '@emailjs/browser';
             position: relative;
             cursor: pointer;
             text-align: center;
-            }
+        }
 
-        .hero .hire-me button p {
+        .hero .hire-me .buttonHire p {
             margin: 0 auto;
             align-self: center;
             font-size: 17px;
@@ -486,10 +487,11 @@ import emailjs from '@emailjs/browser';
             text-align: center;
             }
 
-        .hero .hire-me button::after {
+        .hero .hire-me .buttonHire::after {
             position: absolute;
             content: "";
             width: 100%;
+            text-decoration: none;
             z-index: -1;
             height: 10%;
             bottom: 0;
@@ -526,9 +528,10 @@ import emailjs from '@emailjs/browser';
             transition: 0.2s ease;
             }
 
-        .hero .hire-me button::before {
+        .hero .hire-me .buttonHire::before {
             position: absolute;
             content: "";
+            text-decoration: none;
             /*   bottom: 80%; */
             transform: rotate(180deg);
             width: 100%;
@@ -568,7 +571,7 @@ import emailjs from '@emailjs/browser';
             background: #8792eb;
             }
 
-            .hero .hire-me button:hover::after {
+            .hero .hire-me .buttonHire:hover::after {
             clip-path: polygon(
                 0 30%,
                 9% 34%,
@@ -601,7 +604,7 @@ import emailjs from '@emailjs/browser';
             height: 80%;
             }
 
-            .hero .hire-me button:hover::before {
+            .hero .hire-me .buttonHire:hover::before {
             clip-path: polygon(
                 0 30%,
                 9% 34%,
@@ -641,7 +644,7 @@ import emailjs from '@emailjs/browser';
             height: 100%;
             padding: 4rem;
             color: #000000;
-            background-image: url('/public/img/bg-baru.png');
+            background-image: url('/dist/img/bg-baru.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -664,7 +667,7 @@ import emailjs from '@emailjs/browser';
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .hero .achivment{
-            background-image: url('/public/img/bg-baru.png');
+            background-image: url('/dist/img/bg-baru.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -678,7 +681,7 @@ import emailjs from '@emailjs/browser';
             width: 100%;
             height: 100%;
             padding: 4rem;
-            background-image: url('/public/img/bg-baru.png');
+            background-image: url('/dist/img/bg-baru.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -760,7 +763,7 @@ import emailjs from '@emailjs/browser';
             padding: 10rem;
             width: 100%;
             height: 100%;
-            background-image: url('/public/img/bg-baru.png');
+            background-image: url('/dist/img/bg-baru.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -936,7 +939,7 @@ import emailjs from '@emailjs/browser';
             height: 100%;
             padding: 4rem;
             color: #000000;
-            background-image: url('/public/img/bg-baru.png');
+            background-image: url('/dist/img/bg-baru.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -950,7 +953,7 @@ import emailjs from '@emailjs/browser';
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .hero .achivment{
-            background-image: url('/public/img/bg-baru.png');
+            background-image: url('/dist/img/bg-baru.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -1025,7 +1028,7 @@ import emailjs from '@emailjs/browser';
             letter-spacing: 1px;
             font-family: 'Poppins', sans-serif;
 
-              :is(span) {
+            :is(span) {
                 position: relative;
                 display: inline-block;
                 color: #f3f93a;
@@ -1039,6 +1042,35 @@ import emailjs from '@emailjs/browser';
                     animation: animateWords 5s infinite ease;
                 }
             }
+        }
+
+        .hero .about-me{
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            padding: 4rem;
+            color: #000000;
+            background-image: url('/dist/img/bg-baru.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .hero .about-me .text p{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 0 1.5rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero .achivment{
+            background-image: url('/dist/img/bg-baru.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            width: 100%;
+            height: 100%;
         }
 
         @keyframes animateWords{
@@ -1129,7 +1161,7 @@ import emailjs from '@emailjs/browser';
             height: 100vh;
             padding: 1.5rem;
             color: #000;
-            background-image: url('/public/img/bg-baru.png');
+            background-image: url('/dist/img/bg-baru.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -1140,7 +1172,7 @@ import emailjs from '@emailjs/browser';
             font-family: 'Nunito', sans-serif; 
         }
         .hero .achivment{
-            background-image: url('/public/img/bg-baru.png');
+            background-image: url('/dist/img/bg-baru.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;

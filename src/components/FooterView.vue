@@ -7,11 +7,11 @@
             <div class="wave" id="wave4"></div>
         </div>
         <ul class="social_icon">
-            <li><a href="#https://github.com/Miftahurrahman-STEI"><ion-icon name="logo-github"></ion-icon></a></li>
-            <li><a href="#https://www.linkedin.com/in/muhammad-miftahurrahman-708633259/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-            <li><a href="#https://www.instagram.com/mippvue/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://github.com/Miftahurrahman-STEI"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/muhammad-miftahurrahman-708633259/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/mippvue/"><ion-icon name="logo-instagram"></ion-icon></a></li>
         </ul>
-        <p>@2024 Miftahurrahman | All Rights Reserved</p>
+        <p>©2024 Miftahurrahman | All Rights Reserved</p>
     </footer>
 </template>
 
@@ -30,17 +30,18 @@
             justify-content: flex-end;
             z-index: -1;
         }
-        footer :deep(.social_icon){
+        footer .social_icon{
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 10px 0;
+            cursor: pointer;
         }
-        footer :deep(.social_icon li){
+        footer .social_icon li{
             list-style: none;
         }
-        footer :deep(.social_icon li a){
+        footer .social_icon li a{
             font-size: 2em;
             color: #fff;
             margin: 0 10px;
@@ -74,7 +75,7 @@
             left: 0;
             width: 100%;
             height: 100px;
-            background: url('public/img/wave.png');
+            background: url('/src/assets/img/wave.png');
             background-size: 1000px 100px;
         }
         footer .wave#wave1{

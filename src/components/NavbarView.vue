@@ -2,12 +2,12 @@
     <header :class="{ 'scrolled-nav' : scrolledNav }">
         <nav>
             <div class="branding">
-                <img src="/public/img/brand.png" alt="">
+                <img src="/dist/img/brand.png" alt="">
             </div>
             <ul v-show="!mobile" class="navigation">
                 <li><router-link class="link" :to="{ name: 'Home' }">Home</router-link></li>
                 <li><router-link class="link" :to="{ name: 'About' }">About</router-link></li>
-                <li><router-link class="link" :to="{ name: 'Achivment' }">Achivment</router-link></li>
+                <li><router-link class="link" :to="{ name: 'Achivment' }">Achievement</router-link></li>
                 <li><router-link class="link" :to="{ name: 'Contact' }">Contact Us</router-link></li>
             </ul>
             <div class="icon">
@@ -45,7 +45,7 @@ export default{
     },
     methods: {
         toggleMobileNav() {
-          this.mobileNav  = !this.mobileNav; 
+            this.mobileNav  = !this.mobileNav; 
         },
 
         updateScroll() {
