@@ -210,7 +210,7 @@ import emailjs from '@emailjs/browser';
             <div class="wrapper-experience">
                 <div class="content-experience">
                     <div class="expert-skill">
-                            <img src="/src/assets/img/icons8-c-48.png" alt="vue" class="skill1">
+                            <img src="/src/assets/img/icons8-vue-js-48.png" alt="vue" class="skill1">
                             <img src="/src/assets/img/vuex-1.svg" alt="vuex" class="skill1">
                             <img src="/src/assets/img/icons8-react-native-48.png" alt="react" class="skill1">
                             <img src="/src/assets/img/icons8-c-48.png" alt="c" class="skill1">
