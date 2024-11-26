@@ -13,7 +13,7 @@
         footer{
             position: relative;
             width: 100%;
-            background: #3586ff;
+            background: #000000;
             min-height: 100px;
             padding: 20px 50px;
             display: flex;
