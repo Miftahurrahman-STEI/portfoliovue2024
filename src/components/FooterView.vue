@@ -1,11 +1,5 @@
 <template>
     <footer class="footer">
-        <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-        </div>
         <ul class="social_icon">
             <li><a href="https://github.com/Miftahurrahman-STEI"><ion-icon name="logo-github"></ion-icon></a></li>
             <li><a href="https://www.linkedin.com/in/muhammad-miftahurrahman-708633259/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
@@ -28,7 +22,7 @@
             margin-top: 7rem;
             flex-direction: column;
             justify-content: flex-end;
-            z-index: -1;
+            z-index: 999;
         }
         footer .social_icon{
             position: relative;
@@ -37,9 +31,11 @@
             align-items: center;
             margin: 10px 0;
             cursor: pointer;
+            z-index: 10;
         }
         footer .social_icon li{
             list-style: none;
+            z-index: 10;
         }
         footer .social_icon li a{
             font-size: 2em;
@@ -48,6 +44,7 @@
             display: inline-block;
             transition: 0.5s;
             cursor: pointer;
+            z-index: 10;
         }
         footer :deep(.social_icon li a:hover){
             transform: translateY(-10px);
@@ -58,6 +55,7 @@
             margin: 0 10px;
             display: inline-block;
             text-decoration: none;
+            z-index: 10;
         }
         footer :deep(.menu li a:hover){
             opacity: 1;

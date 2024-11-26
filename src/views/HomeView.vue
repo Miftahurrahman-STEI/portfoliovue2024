@@ -58,23 +58,23 @@ import emailjs from '@emailjs/browser';
                     </h1>
                 <div class="skills">
                     <div class="wrapper-skils">
-                        <img src="/dist/img/icons8-vue-js-48.png" alt="vue" class="skill1">
-                        <img src="/dist/img/vuex-1.svg" alt="vue" class="skill1">
-                        <img src="/dist/img/icons8-react-native-48.png" alt="vue" class="skill1">
-                        <img src="/dist/img/icons8-c-48.png" alt="vue" class="skill1">
-                        <img src="/dist/img/new-php-logo.png" alt="vue" class="skill1">
-                        <img src="/dist/img/icons8-tailwindcss-48.png" alt="vue" class="skill1">
-                        <img src="/dist/img/icons8-figma-48.png" alt="vue" class="skill1">
+                        <img src="/src/assets/img/icons8-vue-js-48.png" alt="vue" class="skill1">
+                        <img src="/src/assets/img/vuex-1.svg" alt="vue" class="skill1">
+                        <img src="/src/assets/img/icons8-react-native-48.png" alt="vue" class="skill1">
+                        <img src="/src/assets/img/icons8-c-48.png" alt="vue" class="skill1">
+                        <img src="/src/assets/img/new-php-logo.png" alt="vue" class="skill1">
+                        <img src="/src/assets/img/icons8-tailwindcss-48.png" alt="vue" class="skill1">
+                        <img src="/src/assets/img/icons8-figma-48.png" alt="vue" class="skill1">
                     </div>
             </div>
             <div class="hire-me">
-                <a href="/dist/hire/CV MUHAMMAD MIFTAHURRAHMAN.pdf" class="buttonHire">
+                <a href="/src/assets/hire/CV MUHAMMAD MIFTAHURRAHMAN.pdf" class="buttonHire">
                     <p>Hire Me</p>
                 </a>
             </div>
             </div>
             <div class="profile">
-                <img src="/dist/img/Frame 18.png" alt="profile">
+                <img src="/src/assets/img/Frame 18-ed6e53ce.png" alt="profile">
             </div>
         </div>
         <div class="about-me">
@@ -116,77 +116,84 @@ import emailjs from '@emailjs/browser';
             >
 
                 <div class="card">
-                    <img src="/dist/achivment/achiv.jpeg" />
+                    <img src="/src/assets/achivment/achiv-64f44558.jpeg" />
                     <div class="card-body">
                         <h3>Juara 1 Algoritma Kompetisi Pemrograman C/C++</h3>
                         <p>Universitas Budi Luhur</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv2.jpg" />
+                    <img src="/src/assets/achivment/achiv2-76255c51.jpg" />
                     <div class="card-body">
                         <h3>Peserta Lomba CSS E-Sports Battle WPU EVENT OF THE YEAR</h3>
                         <p>Universitas Pasundan Bandung</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv4.jpg" />
+                    <img src="/src/assets/achivment/achiv4-42d187a3.jpg" />
                     <div class="card-body">
                         <h3>AWS Cloud Competition For Sagasitas Tech 2024</h3>
                         <p>AWS Sagasitas For Tech 2024</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv5.jpg" />
+                    <img src="/src/assets/achivment/oracle sertifikat_page-0001.jpg" />
+                    <div class="card-body">
+                        <h3>Training about Basic SQL with Oracle</h3>
+                        <p>Oracle Academy</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/src/assets/achivment/achiv5-88413d4b.jpg" />
                     <div class="card-body">
                         <h3>Praktik Kerja Lapangan Komisi Pemilihan Umum</h3>
                         <p>Komisi Pemilihan Umum</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv3.jpg" />
+                    <img src="/src/assets/achivment/achiv3-63a2add0.jpg" />
                     <div class="card-body">
-                        <h3>Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
+                        <h3>Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv9.jpg" />
+                    <img src="/src/assets/achivment/achiv9-2e0ec055.jpg" />
                     <div class="card-body">
                         <h3>Belajar Dasar Structured Query Language ( SQL )</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv7.jpg" />
+                    <img src="/src/assets/achivment/achiv7-007a13fa.jpg" />
                     <div class="card-body">
                         <h3>Belajar Dasar AI (Artificial Intelligence)</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv8.jpg" />
+                    <img src="/src/assets/achivment/achiv8-bc0b6317.jpg" />
                     <div class="card-body">
                         <h3>Memulai Pemrograman dengan Python</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv11.jpg" />
+                    <img src="/src/assets/achivment/achiv11-7222e5a5.jpg" />
                     <div class="card-body">
                         <h3>Memulai Pemrograman dengan C</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv6.jpg" />
+                    <img src="/src/assets/achivment/achiv6-2263bf36.jpg" />
                     <div class="card-body">
                         <h3>Dicoding Developer Coaching #103</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv10.jpg" />
+                    <img src="/src/assets/achivment/achiv10-29518aad.jpg" />
                     <div class="card-body">
                         <h3>Javascript 10 Projects for Beginner</h3>
                         <p>Udemy Course</p>
@@ -203,13 +210,13 @@ import emailjs from '@emailjs/browser';
             <div class="wrapper-experience">
                 <div class="content-experience">
                     <div class="expert-skill">
-                            <img src="/dist/img/icons8-vue-js-48.png" alt="vue" class="skill1">
-                            <img src="/dist/img/vuex-1.svg" alt="vuex" class="skill1">
-                            <img src="/dist/img/icons8-react-native-48.png" alt="react" class="skill1">
-                            <img src="/dist/img/icons8-c-48.png" alt="c" class="skill1">
-                            <img src="/dist/img/new-php-logo.png" alt="php" class="skill1">
-                            <img src="/dist/img/icons8-tailwindcss-48.png" alt="tailwind" class="skill1">
-                            <img src="/dist/img/icons8-figma-48.png" alt="figma" class="skill1">
+                            <img src="/src/assets/img/icons8-c-48.png" alt="vue" class="skill1">
+                            <img src="/src/assets/img/vuex-1.svg" alt="vuex" class="skill1">
+                            <img src="/src/assets/img/icons8-react-native-48.png" alt="react" class="skill1">
+                            <img src="/src/assets/img/icons8-c-48.png" alt="c" class="skill1">
+                            <img src="/src/assets/img/new-php-logo.png" alt="php" class="skill1">
+                            <img src="/src/assets/img/icons8-tailwindcss-48.png" alt="tailwind" class="skill1">
+                            <img src="/src/assets/img/icons8-figma-48.png" alt="figma" class="skill1">
                             <img src="https://brandlogo.org/wp-content/uploads/2024/02/MySQL-Logo-300x300.png.webp" alt="vue" class="skill1">
                     </div>
                     <div class="expert-cards">
@@ -237,42 +244,42 @@ import emailjs from '@emailjs/browser';
             <div class="carousel">
 
                 <div class="card">
-                    <img src="/dist/img/project1.png" />
+                    <img src="/src/assets/img/project1-9b2172ad.png" />
                     <div class="card-body">
                         <h3>E-Commerce Toko Buah Super Murah</h3>
                         <p>Build with HTML and CSS</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/img/project2.png" />
+                    <img src="/src/assets/img/project2-135f065a.png" />
                     <div class="card-body">
                         <h3>Cloning website Starbucks Company</h3>
                         <p>Build with HTML and CSS</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/img/project3.png" />
+                    <img src="/src/assets/img/project3-9fd76387.png" />
                     <div class="card-body">
                         <h3>Project client website property villa</h3>
                         <p>Build with Vue JS 3</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/img/project4.png" />
+                    <img src="/src/assets/img/project4-c3fe023b.png" />
                     <div class="card-body">
                         <h3>Design website property, villa, warehouse</h3>
                         <p>Build with Figma</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/img/project5.png" />
+                    <img src="/src/assets/img/project5-581a0bf1.png" />
                     <div class="card-body">
                         <h3>Design website home furniture</h3>
                         <p>Build with Figma</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/img/project6.png" />
+                    <img src="/src/assets/img/project6-ffeac605.png" />
                     <div class="card-body">
                         <h3>Design Project Website School</h3>
                         <p>Build with Figma</p>
@@ -355,7 +362,7 @@ import emailjs from '@emailjs/browser';
         .hero .hero-main{
             width: 100%;
             height: 100vh;
-            background-image: url('/dist/img/desktop-2.png');
+            background-image: url('/src/assets/img/desktop-2-148eae59.png');
             background-position: center;
             background-repeat: no-repeat; 
             background-size: cover;
@@ -644,7 +651,7 @@ import emailjs from '@emailjs/browser';
             height: 100%;
             padding: 4rem;
             color: #000000;
-            background-image: url('/dist/img/bg-baru.png');
+            background-image: url('/src/assets/img/bg-baru-3cbb19dd.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -667,7 +674,7 @@ import emailjs from '@emailjs/browser';
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .hero .achivment{
-            background-image: url('/dist/img/bg-baru.png');
+            background-image: url('/src/assets/img/bg-baru-3cbb19dd.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -681,7 +688,7 @@ import emailjs from '@emailjs/browser';
             width: 100%;
             height: 100%;
             padding: 4rem;
-            background-image: url('/dist/img/bg-baru.png');
+            background-image: url('/src/assets/img/bg-baru-3cbb19dd.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -763,7 +770,7 @@ import emailjs from '@emailjs/browser';
             padding: 10rem;
             width: 100%;
             height: 100%;
-            background-image: url('/dist/img/bg-baru.png');
+            background-image: url('/src/assets/img/bg-baru-3cbb19dd.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -939,7 +946,7 @@ import emailjs from '@emailjs/browser';
             height: 100%;
             padding: 4rem;
             color: #000000;
-            background-image: url('/dist/img/bg-baru.png');
+            background-image: url('/src/assets/img/bg-baru-3cbb19dd.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -953,7 +960,7 @@ import emailjs from '@emailjs/browser';
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .hero .achivment{
-            background-image: url('/dist/img/bg-baru.png');
+            background-image: url('/src/assets/img/bg-baru-3cbb19dd.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -1050,7 +1057,7 @@ import emailjs from '@emailjs/browser';
             height: 100%;
             padding: 4rem;
             color: #000000;
-            background-image: url('/dist/img/bg-baru.png');
+            background-image: url('/src/assets/img/bg-baru-3cbb19dd.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -1064,7 +1071,7 @@ import emailjs from '@emailjs/browser';
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .hero .achivment{
-            background-image: url('/dist/img/bg-baru.png');
+            background-image: url('/src/assets/img/bg-baru-3cbb19dd.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -1161,7 +1168,7 @@ import emailjs from '@emailjs/browser';
             height: 100vh;
             padding: 1.5rem;
             color: #000;
-            background-image: url('/dist/img/bg-baru.png');
+            background-image: url('/assets/img/bg-baru.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -1172,7 +1179,7 @@ import emailjs from '@emailjs/browser';
             font-family: 'Nunito', sans-serif; 
         }
         .hero .achivment{
-            background-image: url('/dist/img/bg-baru.png');
+            background-image: url('/assets/img/bg-baru.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;

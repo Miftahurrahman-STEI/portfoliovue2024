@@ -7,78 +7,85 @@
                 :visibleOnce="{ opacity: 1, y: 0 }"
             >
 
-                <div class="card">
-                    <img src="/dist/achivment/achiv.jpeg" />
+            <div class="card">
+                    <img src="/src/assets/achivment/achiv-64f44558.jpeg" />
                     <div class="card-body">
                         <h3>Juara 1 Algoritma Kompetisi Pemrograman C/C++</h3>
                         <p>Universitas Budi Luhur</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv2.jpg" />
+                    <img src="/src/assets/achivment/achiv2-76255c51.jpg" />
                     <div class="card-body">
                         <h3>Peserta Lomba CSS E-Sports Battle WPU EVENT OF THE YEAR</h3>
                         <p>Universitas Pasundan Bandung</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv4.jpg" />
+                    <img src="/src/assets/achivment/achiv4-42d187a3.jpg" />
                     <div class="card-body">
                         <h3>AWS Cloud Competition For Sagasitas Tech 2024</h3>
                         <p>AWS Sagasitas For Tech 2024</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv5.jpg" />
+                    <img src="/src/assets/achivment/oracle sertifikat_page-0001.jpg" />
+                    <div class="card-body">
+                        <h3>Training about Basic SQL with Oracle</h3>
+                        <p>Oracle Academy</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/src/assets/achivment/achiv5-88413d4b.jpg" />
                     <div class="card-body">
                         <h3>Praktik Kerja Lapangan Komisi Pemilihan Umum</h3>
                         <p>Komisi Pemilihan Umum</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv3.jpg" />
+                    <img src="/src/assets/achivment/achiv3-63a2add0.jpg" />
                     <div class="card-body">
-                        <h3>Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
+                        <h3>Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv9.jpg" />
+                    <img src="/src/assets/achivment/achiv9-2e0ec055.jpg" />
                     <div class="card-body">
                         <h3>Belajar Dasar Structured Query Language ( SQL )</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv7.jpg" />
+                    <img src="/src/assets/achivment/achiv7-007a13fa.jpg" />
                     <div class="card-body">
                         <h3>Belajar Dasar AI (Artificial Intelligence)</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv8.jpg" />
+                    <img src="/src/assets/achivment/achiv8-bc0b6317.jpg" />
                     <div class="card-body">
                         <h3>Memulai Pemrograman dengan Python</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv11.jpg" />
+                    <img src="/src/assets/achivment/achiv11-7222e5a5.jpg" />
                     <div class="card-body">
-                        <h3>Memulai Pemrograman dengan C</h3>
+                        <h3>Dasar Memulai Pemrograman dengan C</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv6.jpg" />
+                    <img src="/src/assets/achivment/achiv6-2263bf36.jpg" />
                     <div class="card-body">
                         <h3>Dicoding Developer Coaching #103</h3>
                         <p>Dicoding Indonesia</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/dist/achivment/achiv10.jpg" />
+                    <img src="/src/assets/achivment/achiv10-29518aad.jpg" />
                     <div class="card-body">
                         <h3>Javascript 10 Projects for Beginner</h3>
                         <p>Udemy Course</p>
