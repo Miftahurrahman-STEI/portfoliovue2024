@@ -11,8 +11,10 @@ Jangan lupa untuk berikan Stars yaa, Salam Titik Koma !! , Terima Kasih 🙏.
 
 
 Tech Stack :
-  🌟 Framework Vue JS 3
+  🌟 Vue JS 3
+  🌟 Vue Use Motion
   🌟 Vanilla CSS
+  🌟 Email JS
 
 Fitur :
   📍 Navigation yang interaktif dan smooth untuk mobile & desktop
