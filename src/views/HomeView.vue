@@ -1,14 +1,16 @@
 <script>
 import emailjs from '@emailjs/browser';
+import SweetAlert from '../components/SweetComponent.vue';
+import SweetComponent from '../components/SweetComponent.vue';
 
-    export default{
+    export default {
         data() {
             return {
                 firstName: '',
                 subject: '',
                 email: '',
                 message: '',
-
+                showMore: false,
                 majors: "Student Informatics Enginering",
             };
         },
@@ -33,24 +35,91 @@ import emailjs from '@emailjs/browser';
                     },
                 );
             },
+            handleClick() {
+                const readmore = document.getElementById('readmore');
+                readmore.innerHTML.sty = `
+                <div class="flex flex wrap justify-center items-center">
+                        <div class="flex flex-wrap rounded visibility w-[300px]">
+                            <div class="card">
+                                <img src="/src/assets/achivment/achiv5-88413d4b.jpg" />
+                                <div class="card-body">
+                                    <h3>Praktik Kerja Lapangan Komisi Pemilihan Umum</h3>
+                                    <p>Komisi Pemilihan Umum</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/src/assets/achivment/achiv3-63a2add0.jpg" />
+                                <div class="card-body">
+                                    <h3>Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
+                                    <p>Dicoding Indonesia</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/src/assets/achivment/achiv9-2e0ec055.jpg" />
+                                <div class="card-body">
+                                    <h3>Belajar Dasar Structured Query Language ( SQL )</h3>
+                                    <p>Dicoding Indonesia</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/src/assets/achivment/achiv7-007a13fa.jpg" />
+                                <div class="card-body">
+                                    <h3>Belajar Dasar AI (Artificial Intelligence)</h3>
+                                    <p>Dicoding Indonesia</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/src/assets/achivment/achiv8-bc0b6317.jpg" />
+                                <div class="card-body">
+                                    <h3>Memulai Pemrograman dengan Python</h3>
+                                    <p>Dicoding Indonesia</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/src/assets/achivment/achiv11-7222e5a5.jpg" />
+                                <div class="card-body">
+                                    <h3>Memulai Pemrograman dengan C</h3>
+                                    <p>Dicoding Indonesia</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/src/assets/achivment/achiv6-2263bf36.jpg" />
+                                <div class="card-body">
+                                    <h3>Dicoding Developer Coaching #103</h3>
+                                    <p>Dicoding Indonesia</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/src/assets/achivment/achiv10-29518aad.jpg" />
+                                <div class="card-body">
+                                    <h3>Javascript 10 Projects for Beginner</h3>
+                                    <p>Udemy Course</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                 <button id="readmore" class="px-20 py-3 bg-blue-400 rounded">
+                    ReadMore
+                </button>
+                `;
+            }
         },
         mounted() {
-        // Inisialisasi EmailJS
-         emailjs.init('FcLpyFVMcEm-ZbcwR');
+            // Inisialisasi EmailJS
+            emailjs.init('FcLpyFVMcEm-ZbcwR');
+            document.addEventListener('click', this.handleClick)
         }
     };
 </script>
 
 <template>
-    <div class="hero">
+    <div class="hero" id="home">
         <div class="hero-main">
             <div class="intro">
                     <h1>Hy! I Am,<br/>Muhammad Miftahurrahman
                         <p class="desc-profile">
                             {{ majors }} |
                             <span>
-                                <span>Front End Web Developer🚀</span>
-                                <span>UI/UX Design✨</span>
                                 <span>Front End Web Developer🚀</span>
                                 <span>UI/UX Design✨</span>
                             </span>
@@ -77,26 +146,28 @@ import emailjs from '@emailjs/browser';
                 <img src="/src/assets/img/Frame 18-ed6e53ce.png" alt="profile">
             </div>
         </div>
-        <div class="about-me">
+        <div class="about-me" id="about">
             <div class="wrapper-about">
                 <div class="text"
                     v-motion
                     :initial="{ opacity: 0, y: 10 }"
                     :visibleOnce="{ opacity: 1, y: 0 }"
                 > 
-                    <h1>About</h1> 
+                    <h1 class="text-3xl mb-[10px] font-bold">ABOUT</h1> 
                     <div class="text-content">
-                        <p>I am a graduate of SMKS YMIK JAKARTA Vocational High School, majoring in Computer and Network Engineering. During my time at SMK I participated in extracurricular coding as well as the person in charge, and the competitions that I have participated in include :
+                        <p>I am a graduate of SMKS YMIK JAKARTA Vocational High School, majoring in Computer and Network Engineering. <br>During my time at SMK I participated in extracurricular coding as well as the person in charge, and the competitions that I have participated in include :
                         </p>
                         <p>
-                            I am a graduate of SMK YMIK JAKARTA Vocational High School majoring in Computer and Network Engineering. While at SMK I participated in extracurricular coding as well as being in charge, and I was active in competitions and training. Now I continue my education at Mercu Buana University Jakarta, and this is the proof that I have been active in programming competitions during my vocational high school years:
-                            <br/>
+                            I am a graduate of SMK YMIK JAKARTA Vocational High School majoring in Computer and Network Engineering.<br>While at SMK I participated in extracurricular coding as well as being in charge, and I was active in competitions and training. <br>Now I continue my education at Mercu Buana University Jakarta, and this is the proof that I have been active in programming competitions during my vocational high school years:
+                            <br>
                             🏆 1st place in Algorithm Competition organized by Budi Luhur University for SMA / SMK level using C++ programming language.  
-                            <br/>
-                            👉🏻 Student Competency Competition (LKS) at Jakarta Barat level with the theme of Information Technology Network Administration System.
-                            <br/>
-                            👉🏻 Flowgorithm Competition organized by the Faculty of Informatics Engineering, Budi Luhur University for high school/vocational level.
-                            <br/>
+                            <br>
+                            <li>
+                                Student Competency Competition (LKS) at Jakarta Barat level with the theme of Information Technology Network Administration System.
+                            </li>
+                            <li>
+                                Flowgorithm Competition organized by the Faculty of Informatics Engineering, Budi Luhur University for high school/vocational level.
+                            </li>
                             👉🏻 participant of CSS Battle-Esports Competition organized by Pasundan University Bandung and sponsored by Unpas Web Programming.
                             <br/>
                             👉🏻 participants of Fast Track Cyber Security Training organized by Microsoft Teams
@@ -107,8 +178,8 @@ import emailjs from '@emailjs/browser';
                 </div>
             </div>
         </div>
-        <div class="achivment">
-            <h1>Achievement</h1>
+        <div id="achievement" class="achivment flex flex-wrap justify-center items-center">
+            <h1 class="text-3xl mb-[10px] font-bold">ACHIEVEMENT</h1>
             <div class="carousel"
                 v-motion
                 :initial="{ opacity: 0, y: 10 }"
@@ -143,70 +214,77 @@ import emailjs from '@emailjs/browser';
                         <p>Oracle Academy</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="/src/assets/achivment/achiv5-88413d4b.jpg" />
-                    <div class="card-body">
-                        <h3>Praktik Kerja Lapangan Komisi Pemilihan Umum</h3>
-                        <p>Komisi Pemilihan Umum</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/src/assets/achivment/achiv3-63a2add0.jpg" />
-                    <div class="card-body">
-                        <h3>Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
-                        <p>Dicoding Indonesia</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/src/assets/achivment/achiv9-2e0ec055.jpg" />
-                    <div class="card-body">
-                        <h3>Belajar Dasar Structured Query Language ( SQL )</h3>
-                        <p>Dicoding Indonesia</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/src/assets/achivment/achiv7-007a13fa.jpg" />
-                    <div class="card-body">
-                        <h3>Belajar Dasar AI (Artificial Intelligence)</h3>
-                        <p>Dicoding Indonesia</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/src/assets/achivment/achiv8-bc0b6317.jpg" />
-                    <div class="card-body">
-                        <h3>Memulai Pemrograman dengan Python</h3>
-                        <p>Dicoding Indonesia</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/src/assets/achivment/achiv11-7222e5a5.jpg" />
-                    <div class="card-body">
-                        <h3>Memulai Pemrograman dengan C</h3>
-                        <p>Dicoding Indonesia</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/src/assets/achivment/achiv6-2263bf36.jpg" />
-                    <div class="card-body">
-                        <h3>Dicoding Developer Coaching #103</h3>
-                        <p>Dicoding Indonesia</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/src/assets/achivment/achiv10-29518aad.jpg" />
-                    <div class="card-body">
-                        <h3>Javascript 10 Projects for Beginner</h3>
-                        <p>Udemy Course</p>
-                    </div>
-                </div>
 
+                <!-- <div class="hidden">
+                    <div class="card">
+                        <img src="/src/assets/achivment/achiv5-88413d4b.jpg" />
+                        <div class="card-body">
+                            <h3>Praktik Kerja Lapangan Komisi Pemilihan Umum</h3>
+                            <p>Komisi Pemilihan Umum</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/achivment/achiv3-63a2add0.jpg" />
+                        <div class="card-body">
+                            <h3>Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
+                            <p>Dicoding Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/achivment/achiv9-2e0ec055.jpg" />
+                        <div class="card-body">
+                            <h3>Belajar Dasar Structured Query Language ( SQL )</h3>
+                            <p>Dicoding Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/achivment/achiv7-007a13fa.jpg" />
+                        <div class="card-body">
+                            <h3>Belajar Dasar AI (Artificial Intelligence)</h3>
+                            <p>Dicoding Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/achivment/achiv8-bc0b6317.jpg" />
+                        <div class="card-body">
+                            <h3>Memulai Pemrograman dengan Python</h3>
+                            <p>Dicoding Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/achivment/achiv11-7222e5a5.jpg" />
+                        <div class="card-body">
+                            <h3>Memulai Pemrograman dengan C</h3>
+                            <p>Dicoding Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/achivment/achiv6-2263bf36.jpg" />
+                        <div class="card-body">
+                            <h3>Dicoding Developer Coaching #103</h3>
+                            <p>Dicoding Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/achivment/achiv10-29518aad.jpg" />
+                        <div class="card-body">
+                            <h3>Javascript 10 Projects for Beginner</h3>
+                            <p>Udemy Course</p>
+                        </div>
+                    </div>
+                </div> -->
+                
             </div>
         </div>
 
-        <div class="experience">
-            <div class="text">
-                    <h1>Experience</h1>
-                </div>
+        <button id="readmore" class="px-20 py-3 bg-blue-400 rounded">
+            ReadMore
+        </button>
+
+        <div class="experience" id="experience">
+            <div class="text-3xl">
+                <h1>EXPERIENCE</h1>
+            </div>
             <div class="wrapper-experience">
                 <div class="content-experience">
                     <div class="expert-skill">
@@ -237,9 +315,9 @@ import emailjs from '@emailjs/browser';
             </div>
         </div>
 
-        <div class="projects">
-            <div class="text">
-                <h1>Project</h1>
+        <div class="projects" id="projects">
+            <div class="text-3xl">
+                <h1>PROJECT</h1>
             </div>
             <div class="carousel">
 
@@ -289,7 +367,7 @@ import emailjs from '@emailjs/browser';
             </div>
         </div>
 
-            <div class="contact-container">
+            <div class="contact-container" id="contact">
                 <form action="POST" ref="form" @submit.prevent="sendEmail">
                     <div class="name-fields">
                         <div class="field">
@@ -327,7 +405,7 @@ import emailjs from '@emailjs/browser';
                             required
                         />
                     </div>
-                    <div class="submitbutton field">
+                    <div @click="handleClick()" class="submitbutton field" id="handleClick">
                         <button type="submit" value="send">SUBMIT</button>
                     </div>
     
@@ -345,6 +423,7 @@ import emailjs from '@emailjs/browser';
             padding: 0;
             box-sizing: border-box;
             font-family: "Poppins", sans-serif;
+            scroll-behavior: smooth;
         }
 
         /* Hero Main */
@@ -401,7 +480,7 @@ import emailjs from '@emailjs/browser';
 
                 :is(span) {
                     display: block;
-                    animation: animateWords 5s infinite ease;
+                    animation: animateWords 5s infinite alternate;
                 }
             }
         }
@@ -650,8 +729,10 @@ import emailjs from '@emailjs/browser';
             width: 100%;
             height: 100%;
             padding: 4rem;
-            color: #000000;
-            background-image: url('/src/assets/img/bg-baru-3cbb19dd.png');
+            color: #ffffff;
+            text-align: center;
+            /* background-image: url('/src/assets/img/bg-baru-3cbb19dd.png'); */
+            background-color: #000;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -671,6 +752,7 @@ import emailjs from '@emailjs/browser';
         .hero .about-me .text{
             width: 800px;
             font-size: 20px;
+            text-align: justify;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .hero .achivment{
@@ -1135,7 +1217,7 @@ import emailjs from '@emailjs/browser';
         .hero hero-main .intro p{
             font-size: 10px;
             color: #F0E5CF;
-            letter-spacing: 1px;
+            letter-spacing: 0px;
         }
         .hero .intro p > span{
             color: #f0e5cfc7;

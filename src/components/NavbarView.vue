@@ -5,20 +5,31 @@
                 <img src="/src/assets/img/brand-a843a8db.png" alt="">
             </div>
             <ul v-show="!mobile" class="navigation">
-                <li><router-link class="link" :to="{ name: 'Home' }">Home</router-link></li>
-                <li><router-link class="link" :to="{ name: 'About' }">About</router-link></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#achievement">Achievement</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <li><router-link class="link" :to="{ name: 'About' }">About</router-link></li>
                 <li><router-link class="link" :to="{ name: 'Achivment' }">Achievement</router-link></li>
-                <li><router-link class="link" :to="{ name: 'Contact' }">Contact Us</router-link></li>
+                <li><router-link class="link" :to="{ name: 'Contact' }">Contact Us</router-link></li> -->
             </ul>
             <div class="icon">
                 <i @click="toggleMobileNav" v-show="mobile" class="far fa-bars" :class="{ 'icon-active' : mobileNav }"></i>
             </div>
             <transition name="mobile-nav">
                 <ul v-show="mobileNav" class="dropdown-nav">
-                    <li><router-link class="link" :to="{ name: 'Home' }">Home</router-link></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#achievement">Achievement</a></li>
+                    <li><a href="#achievement">Experience</a></li>
+                    <li><a href="#achievement">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <li><router-link class="link" :to="{ name: 'Home' }">Home</router-link></li>
                     <li><router-link class="link" :to="{ name: 'About' }">About</router-link></li>
                     <li><router-link class="link" :to="{ name: 'Achivment' }">Achivment</router-link></li>
-                    <li><router-link class="link" :to="{ name: 'Contact' }">Contact Us</router-link></li>
+                    <li><router-link class="link" :to="{ name: 'Contact' }">Contact Us</router-link></li> -->
                 </ul>
             </transition>
         </nav>
@@ -106,7 +117,7 @@ header{
             margin-left: 16px;
         }
     
-        .link {
+        a {
             font-size: 14px;
             transition: .5s ease all;
             padding-bottom: 4px;
@@ -239,7 +250,7 @@ header{
             margin-left: 16px;
         }
     
-        .link {
+        a {
             font-size: 14px;
             transition: .5s ease all;
             padding-bottom: 4px;

@@ -1,13 +1,14 @@
 <template>
     <div class="container">
         <div class="contact-container">
-            <form action="POST" ref="form" @submit.prevent="sendEmail">
+            <form id="cForm" action="POST" ref="form" @submit.prevent="sendEmail">
                     <div class="name-fields">
                         <div class="field">
                             <input 
                                 type="text" 
                                 v-model="firstName" 
                                 placeholder="First Name" 
+                                name="name"
                                 required
                             />
                         </div>
@@ -16,6 +17,7 @@
                                 type="text" 
                                 v-model="subject"
                                 placeholder="Subject of message"
+                                name="subject"
                                 required
                             />
                         </div>
@@ -26,6 +28,7 @@
                             type="email" 
                             v-model="email"  
                             placeholder="Enter your Email"
+                            name="email"
                             required
                         />
                     </div>
@@ -35,6 +38,7 @@
                             type="textarea"
                             v-model="message"
                             placeholder="Enter Message"
+                            name="message"
                             required
                         />
                     </div>
@@ -75,12 +79,19 @@ export default{
                 'service_7fq8172', 'template_eo3d7z9', templateParams,
             ).then((res) => {
                     alert('SUCCESS MENGIRIM PESAN!');
+                    this.resetForm();
                 },
                 (error) => {
                     alert('GAGAL MENGIRIM PESAN ');
                 },
             );
         },
+        resetForm() {
+            this.firstName = '';
+            this.email = '';
+            this.subject = '';
+            this.message = '';
+        }
     },
     mounted() {
     // Inisialisasi EmailJS
