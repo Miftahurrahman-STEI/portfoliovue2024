@@ -14,6 +14,11 @@ import SweetComponent from '../components/SweetComponent.vue';
                 majors: "Student Informatics Enginering",
             };
         },
+        computed: {
+            isValidEmail() {
+                return /^[^@]+@\w+(\.\w+)+\w$/.test(this.email);
+            },
+        },
         methods: {
             sendEmail() {
                 const templateParams = {
@@ -28,7 +33,7 @@ import SweetComponent from '../components/SweetComponent.vue';
                 emailjs.send(
                     'service_7fq8172', 'template_eo3d7z9', templateParams,
                 ).then((res) => {
-                        alert('SUCCESS MENGIRIM PESAN!');
+                            alert('SUCCESS MENGIRIM PESAN!');
                     },
                     (error) => {
                         alert('GAGAL MENGIRIM PESAN ');
@@ -102,13 +107,13 @@ import SweetComponent from '../components/SweetComponent.vue';
                     ReadMore
                 </button>
                 `;
-            }
+            },
         },
         mounted() {
             // Inisialisasi EmailJS
             emailjs.init('FcLpyFVMcEm-ZbcwR');
             document.addEventListener('click', this.handleClick)
-        }
+        },
     };
 </script>
 
@@ -367,7 +372,7 @@ import SweetComponent from '../components/SweetComponent.vue';
             </div>
         </div>
 
-            <div class="contact-container" id="contact">
+            <!-- <div class="contact-container" id="contact">
                 <form action="POST" ref="form" @submit.prevent="sendEmail">
                     <div class="name-fields">
                         <div class="field">
@@ -387,14 +392,21 @@ import SweetComponent from '../components/SweetComponent.vue';
                             />
                         </div>
                     </div>
-    
+
                     <div class="email-field field">
                         <input 
                             type="email" 
-                            v-model="email"  
+                            v-model="email"
+                            @focus="touched = true"
                             placeholder="Enter your Email"
                             required
                         />
+                        <div>
+                            Email is {{isValidEmail ? 'valid' : 'invalid'}}
+                        </div>
+
+                        <small v-if="touched && errors.required" class="error-message">Email is required</small>
+                        <small v-if="touched && errors.invalidEmail" class="error-message">Please provide a valid email address.</small>
                     </div>
     
                     <div class="field">
@@ -410,7 +422,7 @@ import SweetComponent from '../components/SweetComponent.vue';
                     </div>
     
                 </form>
-            </div>
+            </div> -->
     </div>
 </template>
 
@@ -960,6 +972,11 @@ import SweetComponent from '../components/SweetComponent.vue';
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .error-message{
+            display: block;
+            color: red;
+            margin-top: 5px;
         }
         .submitbutton button:hover{
             background-color: #7C00FE;
