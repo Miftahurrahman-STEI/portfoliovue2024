@@ -1,7 +1,6 @@
 <script>
 import emailjs from '@emailjs/browser';
-import SweetAlert from '../components/SweetComponent.vue';
-import SweetComponent from '../components/SweetComponent.vue';
+import { ref } from 'vue';
 
     export default {
         data() {
@@ -13,6 +12,25 @@ import SweetComponent from '../components/SweetComponent.vue';
                 showMore: false,
                 majors: "Student Informatics Enginering",
             };
+        },
+        setup() {
+            const isCardVisible = ref(false);
+            const isCardVisible2 = ref(false);
+
+            const toggleCard = () => {
+                isCardVisible.value = !isCardVisible.value;
+            };
+
+            const toggleCard2 = () => {
+                isCardVisible2.value = !isCardVisible2.value;
+            };
+
+            return {
+                isCardVisible,
+                toggleCard,
+                isCardVisible2,
+                toggleCard2,
+            }
         },
         computed: {
             isValidEmail() {
@@ -146,9 +164,21 @@ import SweetComponent from '../components/SweetComponent.vue';
                     <p>Hire Me</p>
                 </a>
             </div>
+
+            <!-- <div class="flex">
+                <img src="" class="w-8 h-8 rounded bg-black z-0"/>
+                <img src="" class="w-8 h-8 rounded bg-black z-10"/>
+                <img src="" class="w-8 h-8 rounded bg-black z-20"/>
+            </div> -->
+
             </div>
             <div class="profile">
                 <img src="/src/assets/img/Frame 18-ed6e53ce.png" alt="profile">
+            </div>
+        </div>
+        <div class="z-[-1px] relative w-full h-[132px] bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+            <div class="bg-black w-full h-[132px] origin-bottom relative z-[99999px]">
+                
             </div>
         </div>
         <div class="about-me" id="about">
@@ -164,20 +194,25 @@ import SweetComponent from '../components/SweetComponent.vue';
                         </p>
                         <p>
                             I am a graduate of SMK YMIK JAKARTA Vocational High School majoring in Computer and Network Engineering.<br>While at SMK I participated in extracurricular coding as well as being in charge, and I was active in competitions and training. <br>Now I continue my education at Mercu Buana University Jakarta, and this is the proof that I have been active in programming competitions during my vocational high school years:
-                            <br>
-                            🏆 1st place in Algorithm Competition organized by Budi Luhur University for SMA / SMK level using C++ programming language.  
-                            <br>
+                            <br><br>
+                            <li>
+                                🏆 1st place in Algorithm Competition organized by Budi Luhur University for SMA / SMK level using C++ programming language.  
+                            </li>
                             <li>
                                 Student Competency Competition (LKS) at Jakarta Barat level with the theme of Information Technology Network Administration System.
                             </li>
                             <li>
                                 Flowgorithm Competition organized by the Faculty of Informatics Engineering, Budi Luhur University for high school/vocational level.
                             </li>
-                            👉🏻 participant of CSS Battle-Esports Competition organized by Pasundan University Bandung and sponsored by Unpas Web Programming.
-                            <br/>
-                            👉🏻 participants of Fast Track Cyber Security Training organized by Microsoft Teams
-                            <br/>
-                            👉🏻 participants of AWS Cloud Computing Competition Sagasitas for Tech 2024
+                            <li>
+                                participant of CSS Battle-Esports Competition organized by Pasundan University Bandung and sponsored by Unpas Web Programming.
+                            </li>
+                            <li>
+                                participants of Fast Track Cyber Security Training organized by Microsoft Teams
+                            </li>
+                            <li>
+                                participants of AWS Cloud Computing Competition Sagasitas for Tech 2024
+                            </li>
                         </p>
                     </div>
                 </div>
@@ -202,7 +237,6 @@ import SweetComponent from '../components/SweetComponent.vue';
                     <img src="/src/assets/achivment/achiv2-76255c51.jpg" />
                     <div class="card-body">
                         <h3>Peserta Lomba CSS E-Sports Battle WPU EVENT OF THE YEAR</h3>
-                        <p>Universitas Pasundan Bandung</p>
                     </div>
                 </div>
                 <div class="card">
@@ -220,71 +254,77 @@ import SweetComponent from '../components/SweetComponent.vue';
                     </div>
                 </div>
 
-                <!-- <div class="hidden">
-                    <div class="card">
-                        <img src="/src/assets/achivment/achiv5-88413d4b.jpg" />
-                        <div class="card-body">
-                            <h3>Praktik Kerja Lapangan Komisi Pemilihan Umum</h3>
-                            <p>Komisi Pemilihan Umum</p>
-                        </div>
+                <div class="flex flex-col items-center mt-10 space-y-4">
+                    <button class="w-[100px] px-4 py-2 text-white bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2" @click="toggleCard">
+                        {{ isCardVisible ? "Read Less" : "Read More" }}
+                    </button>
+        
+                    <div v-if="isCardVisible" class="px-4 py-2 text-black">
+                        <div class="flex flex-wrap gap-4 justify-center items-center">
+                                <div class="card">
+                                    <img src="/src/assets/achivment/achiv5-88413d4b.jpg" />
+                                    <div class="card-body">
+                                        <h3>Praktik Kerja Lapangan Komisi Pemilihan Umum</h3>
+                                        <p>Komisi Pemilihan Umum</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/src/assets/achivment/achiv3-63a2add0.jpg" />
+                                    <div class="card-body">
+                                        <h3>Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
+                                        <p>Dicoding Indonesia</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/src/assets/achivment/achiv9-2e0ec055.jpg" />
+                                    <div class="card-body">
+                                        <h3>Belajar Dasar Structured Query Language ( SQL )</h3>
+                                        <p>Dicoding Indonesia</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/src/assets/achivment/achiv7-007a13fa.jpg" />
+                                    <div class="card-body">
+                                        <h3>Belajar Dasar AI (Artificial Intelligence)</h3>
+                                        <p>Dicoding Indonesia</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/src/assets/achivment/achiv8-bc0b6317.jpg" />
+                                    <div class="card-body">
+                                        <h3>Memulai Pemrograman dengan Python</h3>
+                                        <p>Dicoding Indonesia</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/src/assets/achivment/achiv11-7222e5a5.jpg" />
+                                    <div class="card-body">
+                                        <h3>Memulai Pemrograman dengan C</h3>
+                                        <p>Dicoding Indonesia</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/src/assets/achivment/achiv6-2263bf36.jpg" />
+                                    <div class="card-body">
+                                        <h3>Dicoding Developer Coaching #103</h3>
+                                        <p>Dicoding Indonesia</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="/src/assets/achivment/achiv10-29518aad.jpg" />
+                                    <div class="card-body">
+                                        <h3>Javascript 10 Projects for Beginner</h3>
+                                        <p>Udemy Course</p>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
-                    <div class="card">
-                        <img src="/src/assets/achivment/achiv3-63a2add0.jpg" />
-                        <div class="card-body">
-                            <h3>Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
-                            <p>Dicoding Indonesia</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/src/assets/achivment/achiv9-2e0ec055.jpg" />
-                        <div class="card-body">
-                            <h3>Belajar Dasar Structured Query Language ( SQL )</h3>
-                            <p>Dicoding Indonesia</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/src/assets/achivment/achiv7-007a13fa.jpg" />
-                        <div class="card-body">
-                            <h3>Belajar Dasar AI (Artificial Intelligence)</h3>
-                            <p>Dicoding Indonesia</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/src/assets/achivment/achiv8-bc0b6317.jpg" />
-                        <div class="card-body">
-                            <h3>Memulai Pemrograman dengan Python</h3>
-                            <p>Dicoding Indonesia</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/src/assets/achivment/achiv11-7222e5a5.jpg" />
-                        <div class="card-body">
-                            <h3>Memulai Pemrograman dengan C</h3>
-                            <p>Dicoding Indonesia</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/src/assets/achivment/achiv6-2263bf36.jpg" />
-                        <div class="card-body">
-                            <h3>Dicoding Developer Coaching #103</h3>
-                            <p>Dicoding Indonesia</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/src/assets/achivment/achiv10-29518aad.jpg" />
-                        <div class="card-body">
-                            <h3>Javascript 10 Projects for Beginner</h3>
-                            <p>Udemy Course</p>
-                        </div>
-                    </div>
-                </div> -->
-                
+                </div>
             </div>
+
         </div>
 
-        <button id="readmore" class="px-20 py-3 bg-blue-400 rounded">
-            ReadMore
-        </button>
+        
 
         <div class="experience" id="experience">
             <div class="text-3xl">
@@ -354,21 +394,32 @@ import SweetComponent from '../components/SweetComponent.vue';
                         <p>Build with Figma</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="/src/assets/img/project5-581a0bf1.png" />
-                    <div class="card-body">
-                        <h3>Design website home furniture</h3>
-                        <p>Build with Figma</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/src/assets/img/project6-ffeac605.png" />
-                    <div class="card-body">
-                        <h3>Design Project Website School</h3>
-                        <p>Build with Figma</p>
-                    </div>
-                </div>
 
+                <div class="flex flex-col items-center mt-10 space-y-4">
+                    <button class="w-[100px] px-4 py-2 text-white bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2" @click="toggleCard2">
+                        {{ isCardVisible2 ? "Read Less" : "Read More" }}
+                    </button>
+
+                    <div v-if="isCardVisible2" class="px-4 py-2 text-black">
+                        <div class="flex flex-wrap gap-4 justify-center items-center">
+                            <div class="card">
+                                <img src="/src/assets/img/project5-581a0bf1.png" />
+                                <div class="card-body">
+                                    <h3>Design website home furniture</h3>
+                                    <p>Build with Figma</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="/src/assets/img/project6-ffeac605.png" />
+                                <div class="card-body">
+                                    <h3>Design Project Website School</h3>
+                                    <p>Build with Figma</p>
+                                </div>
+                            </div>         
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
             <!-- <div class="contact-container" id="contact">
@@ -742,8 +793,7 @@ import SweetComponent from '../components/SweetComponent.vue';
             padding: 4rem;
             color: #ffffff;
             text-align: center;
-            /* background-image: url('/src/assets/img/bg-baru-3cbb19dd.png'); */
-            background-color: #000;
+            background-image: url('../assets/img/bg-about.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -767,7 +817,8 @@ import SweetComponent from '../components/SweetComponent.vue';
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .hero .achivment{
-            background-image: url('/src/assets/img/bg-baru-3cbb19dd.png');
+            /* background-image: url('/src/assets/img/bg-baru-3cbb19dd.png'); */
+            background-color: #ffffff;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -781,7 +832,8 @@ import SweetComponent from '../components/SweetComponent.vue';
             width: 100%;
             height: 100%;
             padding: 4rem;
-            background-image: url('/src/assets/img/bg-baru-3cbb19dd.png');
+            /* background-image: url('/src/assets/img/bg-baru-3cbb19dd.png'); */
+            background-color: #ffffff;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -810,14 +862,15 @@ import SweetComponent from '../components/SweetComponent.vue';
         }
         .hero .achivment .carousel .card,
         .hero .projects .carousel .card{
-            width: 300px;
+            width: 329px;
+            height: 346px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 30px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
             overflow: hidden;
             transition: transform 0.3s ease-in-out;
             z-index: 1;
-            background-color: #fff;
+            background-color: #EEEEEE;
         }
         .hero .achivment .carousel .card .card-title,
         .hero .projects .carousel .card .card-title{
@@ -844,13 +897,19 @@ import SweetComponent from '../components/SweetComponent.vue';
             z-index: 1;
         }
         .hero .projects .carousel .card{
-            background-color: #EBE3D5;
+            background-color: #EEEEEE;
         }
         .hero .achivment .carousel .card img,
         .hero .projects .carousel .card img{
-            width: 300px;
-            height: 200px;
+            width: 285px;
+            height: 211px;
             object-fit: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            border-radius: 30px;
+            margin-top: 22px;
         }
 
         @keyframes putaran{
@@ -863,7 +922,8 @@ import SweetComponent from '../components/SweetComponent.vue';
             padding: 10rem;
             width: 100%;
             height: 100%;
-            background-image: url('/src/assets/img/bg-baru-3cbb19dd.png');
+            /* background-image: url('/src/assets/img/bg-baru-3cbb19dd.png'); */
+            background-color: #ffffff;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
