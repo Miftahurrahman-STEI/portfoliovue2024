@@ -371,7 +371,6 @@ import SweetComponent from '../components/SweetComponent.vue';
 
             </div>
         </div>
-
             <!-- <div class="contact-container" id="contact">
                 <form action="POST" ref="form" @submit.prevent="sendEmail">
                     <div class="name-fields">

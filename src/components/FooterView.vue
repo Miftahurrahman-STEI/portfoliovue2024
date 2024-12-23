@@ -19,7 +19,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 7rem;
+            /* margin-top: 7rem; */
             flex-direction: column;
             justify-content: flex-end;
             z-index: 999;
