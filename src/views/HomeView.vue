@@ -10,7 +10,7 @@ import { ref } from 'vue';
                 email: '',
                 message: '',
                 showMore: false,
-                majors: "Student Informatics Enginering",
+                majors: "Student Informatics Engineering",
             };
         },
         setup() {
@@ -68,19 +68,21 @@ import { ref } from 'vue';
 </script>
 
 <template>
-    <div class="hero" id="home">
-        <div class="hero-main">
+
+    <div class="hero w-full h-full flex justify-center items-center flex-col text-white text-center" id="home">
+        <div :class="['hero-main w-full h-full bg-center bg-no-repeat bg-cover flex justify-evenly items-center pt-4 bg-heroMain']">
             <div class="intro">
-                    <h1>Hy! I Am,<br/>Muhammad Miftahurrahman
-                        <p class="desc-profile">
+                    <h1 class="animate-slidein300 opacity-0 [--slidein-delay:300ms]">Hy! I Am,<br/>Muhammad Miftahurrahman
+                        <p class="desc-profile animate-slidein300 opacity-0 [--slidein-delay:300ms]">
                             {{ majors }} |
-                            <span>
-                                <span>Front End Web Developer🚀</span>
-                                <span>UI/UX Design✨</span>
-                            </span>
+                            <section class="animation">
+                                <div class="first"><div>UI/UX</div></div>
+                                <div class="second"><div>Web Developer</div></div>
+                                <div class="third"><div>Software Engineer</div></div>
+                            </section>
                         </p>
                     </h1>
-                <div class="skills">
+                <div class="skills animate-slidein500 opacity-0 [--slidein-delay:500ms]">
                     <div class="wrapper-skils">
                         <img src="/src/assets/img/icons8-vue-js-48.png" alt="vue" class="skill1">
                         <img src="/src/assets/img/vuex-1.svg" alt="vue" class="skill1">
@@ -91,67 +93,112 @@ import { ref } from 'vue';
                         <img src="/src/assets/img/icons8-figma-48.png" alt="vue" class="skill1">
                     </div>
             </div>
-            <div class="hire-me">
+
+            <div class="hire-me animate-slidein700 opacity-0 [--slidein-delay:700ms]">
                 <a href="/src/assets/hire/CV MUHAMMAD MIFTAHURRAHMAN.pdf" class="buttonHire">
                     <p>Hire Me</p>
                 </a>
             </div>
 
-            <!-- <div class="flex">
-                <img src="" class="w-8 h-8 rounded bg-black z-0"/>
-                <img src="" class="w-8 h-8 rounded bg-black z-10"/>
-                <img src="" class="w-8 h-8 rounded bg-black z-20"/>
-            </div> -->
-
             </div>
-            <div class="profile">
+            <div class="profile animate-slidein300 opacity-0 [--slidein-delay:300ms]">
                 <img src="/src/assets/img/Frame 18-ed6e53ce.png" alt="profile">
             </div>
         </div>
-        <div class="z-[-1px] relative w-full h-[132px] bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
-            <div class="bg-black w-full h-[132px] origin-bottom relative z-[99999px]">
-                
+        <div class="flex justify-center items-center mx-auto text-center z-[-1px] relative w-full h-[132px] bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+            <div class="flex gap-4 text-center -rotate-3 bg-black w-screen h-[132px] origin-bottom relative z-[99999px] text-white">
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Design</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Develop</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Discover</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Design</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Develop</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Discover</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Design</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Develop</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Discover</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Design</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Develop</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Discover</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Design</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Develop</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Discover</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Design</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Develop</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Discover</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Design</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Develop</p>
+                <p class="text-xl font-medium flex mx-auto items-center justify-center text-center">Discover</p>
             </div>
         </div>
-        <div class="about-me" id="about">
+        
+        <div class="about-me md:text-xl sm:text-xl lg:text-xl xl:text-xl" id="about">
+
             <div class="wrapper-about">
                 <div class="text"
                     v-motion
                     :initial="{ opacity: 0, y: 10 }"
                     :visibleOnce="{ opacity: 1, y: 0 }"
                 > 
-                    <h1 class="text-3xl mb-[10px] font-bold">ABOUT</h1> 
-                    <div class="text-content">
-                        <p>I am a graduate of SMKS YMIK JAKARTA Vocational High School, majoring in Computer and Network Engineering. <br>During my time at SMK I participated in extracurricular coding as well as the person in charge, and the competitions that I have participated in include :
+                    <h1 class="text-3xl md:text-3xl mb-[10px] font-bold">ABOUT</h1> 
+                    <div class="text-content sm:text-xl md:text-xl">
+                        <p class="leading-loose md:leading-loose sm:leading-loose xl:leading-loose">I am a graduate of SMKS YMIK JAKARTA Vocational High School, majoring in Computer and Network Engineering. <br>During my time at SMK I participated in extracurricular coding as well as the person in charge, and the competitions that I have participated in include :
                         </p>
-                        <p>
-                            I am a graduate of SMK YMIK JAKARTA Vocational High School majoring in Computer and Network Engineering.<br>While at SMK I participated in extracurricular coding as well as being in charge, and I was active in competitions and training. <br>Now I continue my education at Mercu Buana University Jakarta, and this is the proof that I have been active in programming competitions during my vocational high school years:
-                            <br><br>
-                            <li>
-                                🏆 1st place in Algorithm Competition organized by Budi Luhur University for SMA / SMK level using C++ programming language.  
-                            </li>
-                            <li>
-                                Student Competency Competition (LKS) at Jakarta Barat level with the theme of Information Technology Network Administration System.
-                            </li>
-                            <li>
-                                Flowgorithm Competition organized by the Faculty of Informatics Engineering, Budi Luhur University for high school/vocational level.
-                            </li>
-                            <li>
-                                participant of CSS Battle-Esports Competition organized by Pasundan University Bandung and sponsored by Unpas Web Programming.
-                            </li>
-                            <li>
-                                participants of Fast Track Cyber Security Training organized by Microsoft Teams
-                            </li>
-                            <li>
-                                participants of AWS Cloud Computing Competition Sagasitas for Tech 2024
-                            </li>
+                        <p class="leading-loose md:leading-loose sm:leading-loose xl:leading-loose">
+                            I am a graduate of SMK YMIK JAKARTA Vocational High School majoring in Computer and Network Engineering. While at SMK I participated in extracurricular coding as well as being in charge, and I was active in competitions and training. Now I continue my education at Mercu Buana University Jakarta, and this is the proof that I have been active in programming competitions during my vocational high school years:
                         </p>
+                        <li class="leading-loose md:leading-loose sm:leading-loose xl:leading-loose">
+                            🏆 1st place in Algorithm Competition organized by Budi Luhur University for SMA / SMK level using C++ programming language.  
+                        </li>
+                        <li class="leading-loose md:leading-loose sm:leading-loose xl:leading-loose">
+                            Student Competency Competition (LKS) at Jakarta Barat level with the theme of Information Technology Network Administration System.
+                        </li>
+                        <li class="leading-loose md:leading-loose sm:leading-loose xl:leading-loose">
+                            Flowgorithm Competition organized by the Faculty of Informatics Engineering, Budi Luhur University for high school/vocational level.
+                        </li>
+                        <li class="leading-loose md:leading-loose sm:leading-loose xl:leading-loose">
+                            participant of CSS Battle-Esports Competition organized by Pasundan University Bandung and sponsored by Unpas Web Programming.
+                        </li>
+                        <li class="leading-loose md:leading-loose sm:leading-loose xl:leading-loose">
+                            participants of Fast Track Cyber Security Training organized by Microsoft Teams
+                        </li>
+                        <li class="leading-loose md:leading-loose sm:leading-loose xl:leading-loose text-content text-sm sm:text-xl md:text-xl">
+                            participants of AWS Cloud Computing Competition Sagasitas for Tech 2024
+                        </li>
                     </div>
                 </div>
             </div>
+
         </div>
-        <div id="achievement" class="achivment flex flex-wrap justify-center items-center">
-            <h1 class="text-3xl mb-[10px] font-bold">ACHIEVEMENT</h1>
+
+        <div class="flex flex-col justify-center items-center mx-auto mt-4 text-center bg-cover bg-center w-full h-[238px] bg-heroSocialMedia">
+            <div class="gap-4">
+                <h3 class="text-black font-semibold text-center">Follow me on:</h3>
+                    <div class="flex flex-wrap justify-center items-center gap-4">
+                        <div class="flex justify-center items-center rounded-full bg-[#D9D9D9] w-[50px] h-[50px] cursor-pointer">
+                            <img width="35" height="35" src="https://img.icons8.com/fluency/48/dribbble.png" alt="dribbble"/>
+                        </div>
+                        <div class="flex justify-center items-center rounded-full bg-[#D9D9D9] w-[50px] h-[50px] cursor-pointer">
+                            <img width="35" height="35" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>
+                        </div>
+                        <div class="flex justify-center items-center rounded-full bg-[#D9D9D9] w-[50px] h-[50px] cursor-pointer">
+                            <img width="35" height="35" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
+                        </div>
+                        <div class="flex justify-center items-center rounded-full bg-[#D9D9D9] w-[50px] h-[50px] cursor-pointer">
+                            <img width="35" height="35" src="https://img.icons8.com/color/48/twitter--v1.png" alt="twitter--v1"/>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div id="achievement" class="achivment">
+            <div class="flex justify-between items-center">
+                <div class="flex justify-center items-center">
+                    <h1 class="text-3xl">ACHIEVEMENT</h1>
+                </div>
+                <button class="flex justify-center items-center w-[100px] mr-10 px-4 py-2 text-white bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2" @click="toggleCard">
+                        {{ isCardVisible ? "Close Some" : "See All" }}
+                </button>
+            </div>
             <div class="carousel"
                 v-motion
                 :initial="{ opacity: 0, y: 10 }"
@@ -160,23 +207,29 @@ import { ref } from 'vue';
 
                 <div class="card">
                     <img src="/src/assets/achivment/achiv-64f44558.jpeg" />
-                    <div class="card-body">
+                    <article class="card-body text-wrap">
                         <h3>Juara 1 Algoritma Kompetisi Pemrograman C/C++</h3>
-                        <p>Universitas Budi Luhur</p>
-                    </div>
+                        <div>
+                            <ul class="flex gap-4 *:rounded-full *:border *:border-sky-100 *:bg-sky-50 *:px-2 *:py-0.5 w-10 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10">
+                                <li>Sales</li>
+                                <li>Marketing</li>
+                            </ul>
+                        </div>
+                    </article>
                 </div>
                 <div class="card">
                     <img src="/src/assets/achivment/achiv2-76255c51.jpg" />
-                    <div class="card-body">
+                    <article class="card-body text-wrap">
                         <h3>Peserta Lomba CSS E-Sports Battle WPU EVENT OF THE YEAR</h3>
-                    </div>
+                        <p>Universitas Pasundan Bandung</p>
+                    </article>
                 </div>
                 <div class="card">
                     <img src="/src/assets/achivment/achiv4-42d187a3.jpg" />
-                    <div class="card-body">
+                    <article class="card-body text-wrap">
                         <h3>AWS Cloud Competition For Sagasitas Tech 2024</h3>
                         <p>AWS Sagasitas For Tech 2024</p>
-                    </div>
+                    </article>
                 </div>
                 <div class="card">
                     <img src="/src/assets/achivment/oracle sertifikat_page-0001.jpg" />
@@ -186,11 +239,7 @@ import { ref } from 'vue';
                     </div>
                 </div>
 
-                <div class="flex flex-col items-center mt-10 space-y-4">
-                    <button class="w-[100px] px-4 py-2 text-white bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2" @click="toggleCard">
-                        {{ isCardVisible ? "Read Less" : "Read More" }}
-                    </button>
-        
+                <div class="flex flex-col justify-center items-center mt-10 space-y-4">
                     <div v-if="isCardVisible" class="px-4 py-2 text-black">
                         <div class="flex flex-wrap gap-4 justify-center items-center">
                                 <div class="card">
@@ -293,8 +342,13 @@ import { ref } from 'vue';
         </div>
 
         <div class="projects" id="projects">
-            <div class="text-3xl">
-                <h1>PROJECT</h1>
+            <div class="flex justify-between items-center mr-4">
+                <div class="flex justify-center items-center">
+                    <h1 class="text-3xl">LATEST PROJECT</h1>
+                </div>
+                <button class="flex justify-center items-center w-[100px] px-4 py-2 text-white bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2" @click="toggleCard2">
+                        {{ isCardVisible2 ? "Close Some" : "See All" }}
+                </button>
             </div>
             <div class="carousel">
 
@@ -328,10 +382,6 @@ import { ref } from 'vue';
                 </div>
 
                 <div class="flex flex-col items-center mt-10 space-y-4">
-                    <button class="w-[100px] px-4 py-2 text-white bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2" @click="toggleCard2">
-                        {{ isCardVisible2 ? "Read Less" : "Read More" }}
-                    </button>
-
                     <div v-if="isCardVisible2" class="px-4 py-2 text-black">
                         <div class="flex flex-wrap gap-4 justify-center items-center">
                             <div class="card">
@@ -421,17 +471,6 @@ import { ref } from 'vue';
         }
 
         /* Hero Main */
-        .hero{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            color: #fff;
-            text-align: center;
-            /* margin-top: 4rem; */
-        }
         .hero .hero-main{
             width: 100%;
             height: 100vh;
@@ -462,44 +501,50 @@ import { ref } from 'vue';
             font-weight: bold;
             letter-spacing: 1px;
             font-family: 'Poppins', sans-serif;
-
-              :is(span) {
-                position: relative;
-                display: inline-block;
-                color: #f3f93a;
-                height: 2rem;
-                vertical-align: bottom;
-                overflow: hidden;
-                font-weight: bold;
-
-                :is(span) {
-                    display: block;
-                    animation: animateWords 5s infinite alternate;
-                }
-            }
+            display: flex;
         }
 
-        @keyframes animateWords{
-            0%{
-                transform: translateY(0%);
-            }
-
-            25%{
-                transform: translateY(-100%);
-            }
-
-            50%{
-                transform: translateY(-200%);
-            }
-
-            75%{
-                transform: translateY(-300%);
-            }
-
-            100%{
-                transform: translateY(-400%);
-            }
+        .animation {
+            height: 50px;
+            overflow:hidden;
+            margin-left: 1rem;
         }
+
+        .animation > div > div {
+            padding: 0.25rem 0.75rem;
+            height:2.81rem;
+            text-align: center;
+            margin-bottom: 2.81rem;
+            display:inline-block;
+        }
+
+        .animation div:first-child {
+            animation: text-animation 8s infinite;
+        }
+
+        .first div {
+            background-color:#20a7d8;
+        }
+        .second div {
+            background-color:#CD921E;
+        }
+        .third div {
+            background-color:#c10528;
+        }
+
+        @keyframes text-animation {
+            0% {margin-top: 0;}
+            10% {margin-top: 0;}
+            20% {margin-top: -5.62rem;}
+            30% {margin-top: -5.62rem;}
+            40% {margin-top: -11.24rem;}
+            60% {margin-top: -11.24rem;}
+            70% {margin-top: -5.62rem;}
+            80% {margin-top: -5.62rem;}
+            90% {margin-top: 0;}
+            100% {margin-top: 0;}
+        }
+
         .hero .profile img{
             width: 500px;
             height: 100%;
@@ -722,7 +767,7 @@ import { ref } from 'vue';
             text-align: center;
             width: 100%;
             height: 100%;
-            padding: 4rem;
+            padding: 10rem;
             color: #ffffff;
             text-align: center;
             background-image: url('../assets/img/bg-about.jpg');
@@ -1035,11 +1080,6 @@ import { ref } from 'vue';
             width: 100%;
             height: 100%;
             padding: 4rem;
-            color: #000000;
-            background-image: url('/src/assets/img/bg-baru-3cbb19dd.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
         }
         .hero .about-me .text p{
             display: flex;
@@ -1047,10 +1087,12 @@ import { ref } from 'vue';
             justify-content: center;
             align-items: center;
             padding: 0 1.5rem;
+            color: #fff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 10px
         }
         .hero .achivment{
-            background-image: url('/src/assets/img/bg-baru-3cbb19dd.png');
+            background-color: #ffffff;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -1147,7 +1189,7 @@ import { ref } from 'vue';
             height: 100%;
             padding: 4rem;
             color: #000000;
-            background-image: url('/src/assets/img/bg-baru-3cbb19dd.png');
+            background-color: #ffffff;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -1161,7 +1203,7 @@ import { ref } from 'vue';
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .hero .achivment{
-            background-image: url('/src/assets/img/bg-baru-3cbb19dd.png');
+            background-color: #ffffff;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -1258,7 +1300,7 @@ import { ref } from 'vue';
             height: 100vh;
             padding: 1.5rem;
             color: #000;
-            background-image: url('/assets/img/bg-baru.png');
+            background-color: #ffffff;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -1269,7 +1311,7 @@ import { ref } from 'vue';
             font-family: 'Nunito', sans-serif; 
         }
         .hero .achivment{
-            background-image: url('/assets/img/bg-baru.png');
+            background-color: #ffffff;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;

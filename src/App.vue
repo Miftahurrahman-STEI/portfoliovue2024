@@ -7,6 +7,10 @@
 </template>
 
 <style>
+body {
+  overflow-x: hidden;
+}
+
 html{
   scroll-behavior: smooth;
 }

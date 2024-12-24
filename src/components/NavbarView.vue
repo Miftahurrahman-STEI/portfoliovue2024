@@ -10,7 +10,7 @@
                 <li><a href="#achievement">Achievement</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <!-- <li><a href="#contact">Contact</a></li> -->
                 <!-- <li><router-link class="link" :to="{ name: 'About' }">About</router-link></li>
                 <li><router-link class="link" :to="{ name: 'Achivment' }">Achievement</router-link></li>
                 <li><router-link class="link" :to="{ name: 'Contact' }">Contact Us</router-link></li> -->
@@ -25,7 +25,7 @@
                     <li><a href="#achievement">Achievement</a></li>
                     <li><a href="#achievement">Experience</a></li>
                     <li><a href="#achievement">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <!-- <li><a href="#contact">Contact</a></li> -->
                     <!-- <li><router-link class="link" :to="{ name: 'Home' }">Home</router-link></li>
                     <li><router-link class="link" :to="{ name: 'About' }">About</router-link></li>
                     <li><router-link class="link" :to="{ name: 'Achivment' }">Achivment</router-link></li>
@@ -239,7 +239,7 @@ header{
         :is(ul),
         .link {
             font-weight: 500;
-            color: #fff;
+            color: #000;
             list-style: none;
             text-decoration: none
         }
