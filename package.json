@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test:unit": "vitest"
+    "test:unit": "vitest",
+    "build:css": "tailwindcss build src/index.css -o dist/index.css"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
