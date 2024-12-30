@@ -85,7 +85,6 @@ import { ref } from 'vue';
                 <div class="skills animate-slidein500 opacity-0 [--slidein-delay:500ms]">
                     <div class="wrapper-skils">
                         <img src="/src/assets/img/icons8-vue-js-48.png" alt="vue" class="skill1">
-                        <img src="/src/assets/img/vuex-1.svg" alt="vue" class="skill1">
                         <img src="/src/assets/img/icons8-react-native-48.png" alt="vue" class="skill1">
                         <img src="/src/assets/img/icons8-c-48.png" alt="vue" class="skill1">
                         <img src="/src/assets/img/new-php-logo.png" alt="vue" class="skill1">
@@ -172,19 +171,17 @@ import { ref } from 'vue';
 
         <div class="flex flex-col justify-center items-center mx-auto mt-4 text-center bg-cover bg-center w-full h-[238px] bg-heroSocialMedia">
             <div class="gap-4">
-                <h3 class="text-black font-semibold text-center">Follow me on:</h3>
+                <h3 class="text-black font-semibold text-center" style="margin-bottom: 1rem;">Follow me on:</h3>
                     <div class="flex flex-wrap justify-center items-center gap-4">
                         <div class="flex justify-center items-center rounded-full bg-[#D9D9D9] w-[50px] h-[50px] cursor-pointer">
-                            <img width="35" height="35" src="https://img.icons8.com/fluency/48/dribbble.png" alt="dribbble"/>
+                            <a href="https://www.linkedin.com/in/muhammad-miftahurrahman-708633259/">
+                                <img width="35" height="35" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>
+                            </a>
                         </div>
                         <div class="flex justify-center items-center rounded-full bg-[#D9D9D9] w-[50px] h-[50px] cursor-pointer">
-                            <img width="35" height="35" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>
-                        </div>
-                        <div class="flex justify-center items-center rounded-full bg-[#D9D9D9] w-[50px] h-[50px] cursor-pointer">
-                            <img width="35" height="35" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
-                        </div>
-                        <div class="flex justify-center items-center rounded-full bg-[#D9D9D9] w-[50px] h-[50px] cursor-pointer">
-                            <img width="35" height="35" src="https://img.icons8.com/color/48/twitter--v1.png" alt="twitter--v1"/>
+                            <a href="https://www.instagram.com/mippvue/">
+                                <img width="35" height="35" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
+                            </a>
                         </div>
                     </div>
             </div>
