@@ -209,24 +209,24 @@ import { ref } from 'vue';
                         <p>Universitas Budi Luhur</p>
                     </article>
                 </div>
-                <div class="card">
-                    <img src="/src/assets/achivment/achiv2-76255c51.jpg" />
+                <div class="card m-4 p-4">
+                    <img src="/src/assets/achivment/Achievements-Microsoft Learn.jpg" />
                     <article class="card-body text-wrap">
-                        <h3>Peserta Lomba CSS E-Sports Battle WPU EVENT OF THE YEAR</h3>
-                        <p>Universitas Pasundan Bandung</p>
+                        <h3>Microsoft certificate Get Started with C#, part 1</h3>
+                        <p>Microsoft</p>
                     </article>
                 </div>
                 <div class="card">
                     <img src="/src/assets/achivment/achiv4-42d187a3.jpg" />
                     <article class="card-body text-wrap">
                         <h3>AWS Cloud Competition For Sagasitas Tech 2024</h3>
-                        <p>AWS Sagasitas For Tech 2024</p>
+                        <p>Amazon Web Service (AWS)</p>
                     </article>
                 </div>
                 <div class="card">
                     <img src="/src/assets/achivment/oracle sertifikat_page-0001.jpg" />
                     <div class="card-body">
-                        <h3>Training about Basic SQL with Oracle</h3>
+                        <h3>Training about Basic Fundamental SQL with Oracle</h3>
                         <p>Oracle Academy</p>
                     </div>
                 </div>
@@ -234,6 +234,13 @@ import { ref } from 'vue';
                 <div class="flex flex-col justify-center items-center mt-10 space-y-4">
                     <div v-if="isCardVisible" class="px-4 py-2 text-black">
                         <div class="flex flex-wrap gap-4 justify-center items-center">
+                                <div class="card">
+                                    <img src="/src/assets/achivment/achiv2-76255c51.jpg" />
+                                    <div class="card-body text-wrap">
+                                        <h3>Peserta Lomba CSS E-Sports Battle WPU EVENT OF THE YEAR</h3>
+                                        <p>Universitas Pasundan Bandung</p>
+                                    </div>
+                                </div>
                                 <div class="card">
                                     <img src="/src/assets/achivment/achiv5-88413d4b.jpg" />
                                     <div class="card-body">
